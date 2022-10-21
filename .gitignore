@@ -1,0 +1,16 @@
+**/target/
+/target/
+*/target/*
+.settings
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+*.iml
+*.idea
+/bin/
+*.class
+*.DS_Store
+*.idea
