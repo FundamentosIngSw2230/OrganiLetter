@@ -86,7 +86,8 @@ public class Carta
 
     //toString
     @Override
-    public String toString() {
+    public String toString()
+    {
         return "Carta{" +
                 "idCarta=" + idCarta +
                 ", fechaDeDeposito='" + fechaDeDeposito + '\'' +
