@@ -23,7 +23,7 @@
             </Text>
          </children>
       </Pane>
-      <Button fx:id="botonInterfazPlanificador" layoutX="371.0" layoutY="175.0" mnemonicParsing="false" onAction="#PasarAInterfazPlanificador" style="-fx-background-color: #CBEEF3;" text="Planificador" textAlignment="CENTER">
+      <Button fx:id="botonInterfazPlanificador" layoutX="392.0" layoutY="100.0" mnemonicParsing="false" onAction="#PasarAInterfazPlanificador" style="-fx-background-color: #CBEEF3;" text="Planificador" textAlignment="CENTER">
          <font>
             <Font name="Futura Medium" size="20.0" />
          </font>
