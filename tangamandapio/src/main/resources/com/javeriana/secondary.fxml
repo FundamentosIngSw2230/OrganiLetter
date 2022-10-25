@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javeriana.SecondaryController">
-    <children>
-        <Label text="Escena #2">
-         <font>
-            <Font name="Arial" size="13.0" />
-         </font></Label>
-        <Button fx:id="secondaryButton" onAction="#switchToPrimary" text="Pasar a primera escena">
-         <font>
-            <Font name="Arial" size="13.0" />
-         </font></Button>
-    </children>
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-    </padding>
-</VBox>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #DB3A34 #DB3A34; -fx-border-color: black; -fx-border-width: 3;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javeriana.PrimaryController">
+   <children>
+      <Pane layoutX="14.0" layoutY="14.0" prefHeight="60.0" prefWidth="570.0" style="-fx-background-color: #FFC857 #FFC857; -fx-border-color: #596869 #596869; -fx-border-radius: 10 10 10 10; -fx-background-radius: 15 15 15 15; -fx-border-width: 2;">
+         <children>
+            <Text fill="#596869" layoutX="180.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Planificador">
+               <font>
+                  <Font name="Futura Medium" size="39.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Button layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#PasarAInterfazInicial" style="-fx-background-color: #CBEEF3;" text="Regresar al menú Principal" />
+   </children>
+</AnchorPane>
