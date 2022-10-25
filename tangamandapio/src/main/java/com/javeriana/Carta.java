@@ -1,8 +1,7 @@
 package com.javeriana;
 
-public class Carta
-{
-    //Declaración de Variables
+public class Carta {
+    // Declaración de Variables
     int idCarta;
     String fechaDeDeposito;
     String fechaDeEntrega;
@@ -10,9 +9,9 @@ public class Carta
     String estadoDeCarta;
     boolean esExpress;
 
-    //Contructores
-    public Carta(int idCarta, String fechaDeDeposito, String fechaDeEntrega, String direccionDeEntrega, String estadoDeCarta, boolean esExpress)
-    {
+    // Contructores
+    public Carta(int idCarta, String fechaDeDeposito, String fechaDeEntrega, String direccionDeEntrega,
+            String estadoDeCarta, boolean esExpress) {
         this.idCarta = idCarta;
         this.fechaDeDeposito = fechaDeDeposito;
         this.fechaDeEntrega = fechaDeEntrega;
@@ -21,15 +20,14 @@ public class Carta
         this.esExpress = esExpress;
     }
 
-    //Setters & Getters
+    // Setters & Getters
     // Get idCarta
     public int getIdCarta() {
         return idCarta;
     }
 
     // Set idCarta
-    public void setIdCarta(int idCarta)
-    {
+    public void setIdCarta(int idCarta) {
         this.idCarta = idCarta;
     }
 
@@ -83,11 +81,9 @@ public class Carta
         this.esExpress = esExpress;
     }
 
-
-    //toString
+    // toString
     @Override
-    public String toString()
-    {
+    public String toString() {
         return "Carta{" +
                 "idCarta=" + idCarta +
                 ", fechaDeDeposito='" + fechaDeDeposito + '\'' +
@@ -98,10 +94,9 @@ public class Carta
                 '}';
     }
 
-
     // Metodos clase Carta
-    public String notificarSobrePerdida()
-    {
+
+    public String notificarSobrePerdida() {
         return "Hola, este es el metodo que notifica sobre la perdida jajajajaj";
     }
 }
