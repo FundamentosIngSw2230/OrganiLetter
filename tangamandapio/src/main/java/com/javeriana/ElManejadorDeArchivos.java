@@ -22,7 +22,7 @@ import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class ElManejadorDeArchivos {
-    public static List<Carta> lectorJson() {
+    public static List<Carta> readJson() {
         List<Carta> lCartas = new ArrayList<Carta>();
         try {
             ObjectMapper mapper = new ObjectMapper();
@@ -51,14 +51,14 @@ public class ElManejadorDeArchivos {
 
     }
 
-    public static synchronized void updateJsonFile(Carta book) throws IOException {
+    public static synchronized void updateJsonFile(Carta carta) throws IOException {
         ObjectMapper objectMapper = new ObjectMapper();
         Path path = Paths.get("BdCartas.json");
         final String currentJsonArrayAsString = Files.readString(path);
 
         try (FileWriter fileWriter = new FileWriter(path.toFile(), false)) {
 
-            JSONObject jsonObject = new JSONObject(objectMapper.writeValueAsString(book));
+            JSONObject jsonObject = new JSONObject(objectMapper.writeValueAsString(carta));
             JSONArray jsonArray = new JSONArray(currentJsonArrayAsString);
             jsonArray.put(jsonObject);
 
