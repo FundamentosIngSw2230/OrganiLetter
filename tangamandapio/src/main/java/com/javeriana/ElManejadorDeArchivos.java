@@ -63,6 +63,7 @@ public class ElManejadorDeArchivos {
             jsonArray.put(jsonObject);
 
             fileWriter.write(jsonArray.toString());
+            fileWriter.close();
         }
     }
 
