@@ -14,15 +14,8 @@ public class App extends Application {
     private static Scene scene;
 
     @Override
-<<<<<<< HEAD
     public void start(Stage stage) {
         try {
-=======
-    public void start(Stage stage)
-    {
-        try
-        {
->>>>>>> 65b5c5c2e44863cf44fffedaead5482f44ce89d0
             Parent root = FXMLLoader.load(getClass().getResource("primary.fxml"));
             Scene scene = new Scene(root);
             stage.setScene(scene);

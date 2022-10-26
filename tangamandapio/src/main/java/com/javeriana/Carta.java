@@ -1,8 +1,7 @@
 package com.javeriana;
 
-public class Carta
-{
-    //Declaración de Variables
+public class Carta {
+    // Declaración de Variables
     int idCarta;
     String fechaDeDeposito;
     String fechaDeEntrega;
@@ -13,7 +12,7 @@ public class Carta
     String estadoDeCarta;
     boolean esExpress;
 
-    //Contructores
+    // Contructores
     public Carta(int idCarta, String fechaDeDeposito, String fechaDeEntrega, int calleRecogida, int carreraRecogida,
             int calleEntrega, int carreraEntrega, String estadoDeCarta, boolean esExpress) {
         this.idCarta = idCarta;
@@ -27,6 +26,10 @@ public class Carta
         this.esExpress = esExpress;
     }
 
+    public Carta() {
+
+    }
+
     public Carta(int calleRecogida, int carreraRecogida, int calleEntrega, int carreraEntrega) {
         this.calleRecogida = calleRecogida;
         this.carreraRecogida = carreraRecogida;
@@ -34,7 +37,7 @@ public class Carta
         this.carreraEntrega = carreraEntrega;
     }
 
-    //Setters & Getters
+    // Setters & Getters
     // Get idCarta
     public int getIdCarta() {
         return idCarta;
@@ -70,7 +73,7 @@ public class Carta
         return calleRecogida;
     }
 
-    //set Calle Recogida
+    // set Calle Recogida
     public void setCalleRecogida(int calleRecogida) {
         this.calleRecogida = calleRecogida;
     }
@@ -80,7 +83,7 @@ public class Carta
         return carreraRecogida;
     }
 
-    //set Carrera Recogida
+    // set Carrera Recogida
     public void setCarreraRecogida(int carreraRecogida) {
         this.carreraRecogida = carreraRecogida;
     }
@@ -90,7 +93,7 @@ public class Carta
         return calleEntrega;
     }
 
-    //set Calle Entrega
+    // set Calle Entrega
     public void setCalleEntrega(int calleEntrega) {
         this.calleEntrega = calleEntrega;
     }
@@ -100,7 +103,7 @@ public class Carta
         return carreraEntrega;
     }
 
-    //set Carrera Entrega
+    // set Carrera Entrega
     public void setCarreraEntrega(int carreraEntrega) {
         this.carreraEntrega = carreraEntrega;
     }
@@ -125,7 +128,6 @@ public class Carta
         this.esExpress = esExpress;
     }
 
-
     @Override
     public String toString() {
         return "Carta [idCarta=" + idCarta + ", fechaDeDeposito=" + fechaDeDeposito + ", fechaDeEntrega="
@@ -140,14 +142,14 @@ public class Carta
         return "Hola, este es el metodo que notifica sobre la perdida jajajajaj";
     }
 
-    //Calcula la distacia entre la direccion de la carta y una direccion dada
+    // Calcula la distacia entre la direccion de la carta y una direccion dada
     public double getDistancia(char opcion, int calleDestino, int carreraDestino) {
         if (opcion == 'e') {
-            return Math.sqrt(Math.pow(calleDestino - calleEntrega,2) + Math.pow(carreraDestino - carreraEntrega,2));
+            return Math.sqrt(Math.pow(calleDestino - calleEntrega, 2) + Math.pow(carreraDestino - carreraEntrega, 2));
         } else {
-            return Math.sqrt(Math.pow(calleDestino - calleRecogida,2) + Math.pow(carreraDestino - carreraRecogida,2));
+            return Math.sqrt(Math.pow(calleDestino - calleRecogida, 2) + Math.pow(carreraDestino - carreraRecogida, 2));
         }
-        
+
     }
-    
+
 }

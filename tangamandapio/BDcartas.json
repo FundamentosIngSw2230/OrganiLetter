@@ -1,58 +1,24 @@
 [
     {
+        "calleRecogida": 1,
+        "carreraRecogida": 3,
         "fechaDeEntrega": null,
-        "direccionDeEntrega": "av68-43",
         "idCarta": 32,
+        "calleEntrega": 6,
         "esExpress": true,
         "estadoDeCarta": "peor",
-        "fechaDeDeposito": "31-12-2013"
+        "fechaDeDeposito": "31-12-2013",
+        "carreraEntrega": 78
     },
     {
+        "calleRecogida": 0,
+        "carreraRecogida": 0,
         "fechaDeEntrega": null,
-        "direccionDeEntrega": "av68-43",
-        "idCarta": 35,
-        "esExpress": true,
-        "estadoDeCarta": "peor",
-        "fechaDeDeposito": "31-12-2013"
-    },
-    {
-        "fechaDeEntrega": null,
-        "direccionDeEntrega": "av68-43",
-        "idCarta": 37,
-        "esExpress": true,
-        "estadoDeCarta": "peor",
-        "fechaDeDeposito": "31-12-2013"
-    },
-    {
-        "fechaDeEntrega": null,
-        "direccionDeEntrega": "av68-43",
-        "idCarta": 32,
-        "esExpress": true,
-        "estadoDeCarta": "peor",
-        "fechaDeDeposito": "31-12-2013"
-    },
-    {
-        "fechaDeEntrega": null,
-        "direccionDeEntrega": "av68-43",
-        "idCarta": 35,
-        "esExpress": true,
-        "estadoDeCarta": "peor",
-        "fechaDeDeposito": "31-12-2013"
-    },
-    {
-        "fechaDeEntrega": null,
-        "direccionDeEntrega": "av68-43",
-        "idCarta": 37,
-        "esExpress": true,
-        "estadoDeCarta": "peor",
-        "fechaDeDeposito": "31-12-2013"
-    },
-    {
-        "fechaDeEntrega": null,
-        "direccionDeEntrega": "av68-43",
-        "idCarta": 353,
-        "esExpress": true,
-        "estadoDeCarta": "peor",
-        "fechaDeDeposito": "31-12-2013"
+        "idCarta": 0,
+        "calleEntrega": 0,
+        "esExpress": false,
+        "estadoDeCarta": null,
+        "fechaDeDeposito": null,
+        "carreraEntrega": 0
     }
 ]
