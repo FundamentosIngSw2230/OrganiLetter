@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 /**
@@ -15,19 +16,25 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) {
-        try {
-
+        try
+        {
             Parent root = FXMLLoader.load(getClass().getResource("primary.fxml"));
             Scene scene = new Scene(root);
             stage.setScene(scene);
             stage.show();
+            stage.setResizable(true);
+            stage.setTitle("Proyecto Tangamandapio");
 
-        } catch (Exception e) {
+        }
+        catch (Exception e)
+        {
             e.printStackTrace();
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
+        System.out.println("Test 01");
         launch(args);
     }
 
