@@ -12,7 +12,9 @@ public class Cliente
     // Metodo Generar Carta
     public Carta generarCarta (String fechaDeEntrega, String direccionDeEntrega, boolean esExpress)
     {
-        Carta cartaGenerada = new Carta(0, null, fechaDeEntrega, direccionDeEntrega,null, esExpress);
+        int idCarta = 0;
+        
+        Carta cartaGenerada = new Carta(idCarta, direccionDeEntrega, fechaDeEntrega, idCarta, idCarta, idCarta, idCarta, direccionDeEntrega, esExpress);
 
         System.out.println("Generar Carta");
         return cartaGenerada;
