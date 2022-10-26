@@ -1,8 +1,5 @@
 package com.javeriana;
 
-import java.lang.FdLibm.Pow;
-import java.util.Date;
-
 public class Carta
 {
     //Declaración de Variables
@@ -44,8 +41,7 @@ public class Carta
     }
 
     // Set idCarta
-    public void setIdCarta(int idCarta)
-    {
+    public void setIdCarta(int idCarta) {
         this.idCarta = idCarta;
     }
 
@@ -138,10 +134,9 @@ public class Carta
                 + estadoDeCarta + ", esExpress=" + esExpress + "]";
     }
 
-
     // Metodos clase Carta
-    public String notificarSobrePerdida()
-    {
+
+    public String notificarSobrePerdida() {
         return "Hola, este es el metodo que notifica sobre la perdida jajajajaj";
     }
 
