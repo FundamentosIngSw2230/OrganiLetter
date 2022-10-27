@@ -2,7 +2,7 @@
     {
         "calleRecogida": 1,
         "carreraRecogida": 3,
-        "fechaDeEntrega": null,
+        "fechaDeEntrega": "31-12-2019",
         "idCarta": 32,
         "calleEntrega": 6,
         "esExpress": true,
@@ -19,6 +19,17 @@
         "esExpress": false,
         "estadoDeCarta": null,
         "fechaDeDeposito": null,
+        "carreraEntrega": 0
+    },
+    {
+        "calleRecogida": 0,
+        "carreraRecogida": 0,
+        "fechaDeEntrega": "20-20-2021",
+        "idCarta": 0,
+        "calleEntrega": 0,
+        "esExpress": false,
+        "estadoDeCarta": "Enruta",
+        "fechaDeDeposito": "20-20-2020",
         "carreraEntrega": 0
     }
 ]
