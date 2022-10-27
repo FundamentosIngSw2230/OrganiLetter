@@ -22,7 +22,7 @@ import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class ElManejadorDeArchivos {
-    public static List<Carta> readJson() {
+    public static List<Carta> readJsonCarta() {
         List<Carta> lCartas = new ArrayList<Carta>();
         try {
             ObjectMapper mapper = new ObjectMapper();
@@ -51,9 +51,50 @@ public class ElManejadorDeArchivos {
 
     }
 
-    public static synchronized void updateJsonFile(Carta carta) throws IOException {
+    public static synchronized void updateJsonFileCarta(Carta carta) throws IOException {
         ObjectMapper objectMapper = new ObjectMapper();
         Path path = Paths.get("BdCartas.json");
+        final String currentJsonArrayAsString = Files.readString(path);
+
+        try (FileWriter fileWriter = new FileWriter(path.toFile(), false)) {
+
+            JSONObject jsonObject = new JSONObject(objectMapper.writeValueAsString(carta));
+            JSONArray jsonArray = new JSONArray(currentJsonArrayAsString);
+            jsonArray.put(jsonObject);
+
+            fileWriter.write(jsonArray.toString());
+            fileWriter.close();
+        }
+    }
+
+    public static List<Cartero> readJsonCartero() {
+        List<Cartero> lCarteros = new ArrayList<Cartero>();
+        try {
+            ObjectMapper mapper = new ObjectMapper();
+            InputStream is = new FileInputStream(new File("tangamandapio\\BDcarteros.json"));
+            TypeReference<List<Cartero>> typeReference = new TypeReference<List<Cartero>>() {
+            };
+            lCarteros = mapper.readValue(is, typeReference);
+
+            is.close();
+
+        } catch (FileNotFoundException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } catch (JsonParseException e) {
+            e.printStackTrace();
+        } catch (JsonMappingException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return lCarteros;
+
+    }
+
+    public static synchronized void updateJsonFileCartero(Cartero carta) throws IOException {
+        ObjectMapper objectMapper = new ObjectMapper();
+        Path path = Paths.get("tangamandapio\\BDcarteros.json");
         final String currentJsonArrayAsString = Files.readString(path);
 
         try (FileWriter fileWriter = new FileWriter(path.toFile(), false)) {
