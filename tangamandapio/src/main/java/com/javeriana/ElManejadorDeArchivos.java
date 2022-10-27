@@ -22,12 +22,12 @@ import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class ElManejadorDeArchivos {
-    public static List<Carta> readJsonCarta() {
-        List<Carta> lCartas = new ArrayList<Carta>();
+    public  ArrayList<Carta> readJsonCarta() {
+        ArrayList<Carta> lCartas = new ArrayList<Carta>();
         try {
             ObjectMapper mapper = new ObjectMapper();
             InputStream is = new FileInputStream(new File("tangamandapio\\BDcartas.json"));
-            TypeReference<List<Carta>> typeReference = new TypeReference<List<Carta>>() {
+            TypeReference<ArrayList<Carta>> typeReference = new TypeReference<ArrayList<Carta>>() {
             };
             lCartas = mapper.readValue(is, typeReference);
             for (Carta c : lCartas) {
@@ -68,12 +68,12 @@ public class ElManejadorDeArchivos {
         }
     }
 
-    public static List<Cartero> readJsonCartero() {
-        List<Cartero> lCarteros = new ArrayList<Cartero>();
+    public ArrayList<Cartero> readJsonCartero() {
+        ArrayList<Cartero> lCarteros = new ArrayList<Cartero>();
         try {
             ObjectMapper mapper = new ObjectMapper();
             InputStream is = new FileInputStream(new File("tangamandapio\\BDcarteros.json"));
-            TypeReference<List<Cartero>> typeReference = new TypeReference<List<Cartero>>() {
+            TypeReference<ArrayList<Cartero>> typeReference = new TypeReference<ArrayList<Cartero>>() {
             };
             lCarteros = mapper.readValue(is, typeReference);
             for (Cartero c : lCarteros) {

@@ -62,11 +62,16 @@ public class ControladorInterfazPlanificador {
         try {
             idCarteroAsignado = Integer.parseInt(textoIdCarteroAsignarRuta.getText());
             System.out.println("El ID puesto en el campo es: " + idCarteroAsignado);
-
             textoNotificacionesPlanificador.setText("ID del cartero asignado: " + idCarteroAsignado);
 
             // Mientras tanto...
-            textAreaRutaGenerada.setText(String.valueOf(idCarteroAsignado));
+            Planificador planificador = new Planificador(); 
+            ElManejadorDeArchivos manejadorDeArchivos = new ElManejadorDeArchivos();
+            planificador.carteros.addAll(manejadorDeArchivos.readJsonCartero());
+            planificador.cartasEntregarNormal.addAll(manejadorDeArchivos.readJsonCarta());
+            planificador.generarYAsignarRutaACartero(idCarteroAsignado);
+            ArrayList<String> direcciones = planificador.generarDirecciones(idCarteroAsignado);
+            textAreaRutaGenerada.setText(String.valueOf(direcciones));
         } catch (NumberFormatException e) {
             textoNotificacionesPlanificador.setText(String.valueOf("Error, input invalido"));
             System.out.println("Error: " + e.getMessage());
@@ -111,22 +116,4 @@ public class ControladorInterfazPlanificador {
             System.out.println("Error: " + e.getMessage());
         }
     }
-
-    // Generar arreglo de strings con las direcciones
-
-    public ArrayList<String> generarDirecciones() {
-        String calle = "calle";
-        String carrera = "carrera";
-        String direccion = null;
-        ArrayList<Carta> cartas = new ArrayList<Carta>();
-        ArrayList<String> direcciones = new ArrayList<String>();
-        for (Carta carta : cartas) {
-            direccion = calle + " " + carta.getCalleEntrega() + "," + carrera + " " +
-                    carta.getCarreraEntrega();
-            direcciones.add(direccion);
-        }
-
-        return direcciones;
-    }
-
 }
