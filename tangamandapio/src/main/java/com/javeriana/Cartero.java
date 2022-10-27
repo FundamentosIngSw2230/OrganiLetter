@@ -4,13 +4,16 @@ import java.util.ArrayList;
 
 public class Cartero {
     // Declaración de variables
-    int idCartero;
-    ArrayList<Carta> listadoDeCartasDeCartero = new ArrayList<Carta>();
-    ArrayList<Carta> rutaASeguir = new ArrayList<Carta>();
+    private int idCartero;
+    private String estado;
+    private ArrayList<Carta> listadoDeCartasDeCartero = null;
+    private ArrayList<Carta> rutaASeguir = null;
 
     // Constructores
-    public Cartero(int idCartero, ArrayList<Carta> listadoDeCartasDeCartero, ArrayList<Carta> rutaASeguir) {
+    public Cartero(int idCartero, String estado, ArrayList<Carta> listadoDeCartasDeCartero,
+            ArrayList<Carta> rutaASeguir) {
         this.idCartero = idCartero;
+        this.estado = estado;
         this.listadoDeCartasDeCartero = listadoDeCartasDeCartero;
         this.rutaASeguir = rutaASeguir;
     }
@@ -20,6 +23,16 @@ public class Cartero {
     }
 
     // Getters & Setters
+    // Get getEstado
+    public String getEstado() {
+        return estado;
+    }
+
+    // Set getEstado
+    public void setEstado(String estado) {
+        this.estado = estado;
+    }
+
     // Get idCartero
     public int getIdCartero() {
         return idCartero;
@@ -65,4 +78,5 @@ public class Cartero {
         System.out.println("Actualizar Carta");
         return;
     }
+
 }
