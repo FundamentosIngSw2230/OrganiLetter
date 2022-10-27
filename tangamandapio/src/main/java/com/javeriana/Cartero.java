@@ -2,27 +2,29 @@ package com.javeriana;
 
 import java.util.ArrayList;
 
-public class Cartero
-{
+public class Cartero {
     // Declaración de variables
     int idCartero;
-    ArrayList <Carta> listadoDeCartasDeCartero = new ArrayList <Carta>();
-    ArrayList <Carta> rutaASeguir = new ArrayList <Carta>();
-    
+    ArrayList<Carta> listadoDeCartasDeCartero = new ArrayList<Carta>();
+    ArrayList<Carta> rutaASeguir = new ArrayList<Carta>();
+
     // Constructores
-    public Cartero(int idCartero, ArrayList<Carta> listadoDeCartasDeCartero, ArrayList<Carta> rutaASeguir) 
-    {
+    public Cartero(int idCartero, ArrayList<Carta> listadoDeCartasDeCartero, ArrayList<Carta> rutaASeguir) {
         this.idCartero = idCartero;
         this.listadoDeCartasDeCartero = listadoDeCartasDeCartero;
         this.rutaASeguir = rutaASeguir;
     }
-    
+
+    public Cartero() {
+
+    }
+
     // Getters & Setters
     // Get idCartero
     public int getIdCartero() {
         return idCartero;
     }
-    
+
     // Set idCartero
     public void setIdCartero(int idCartero) {
         this.idCartero = idCartero;
@@ -47,21 +49,19 @@ public class Cartero
     public void setRutaASeguir(ArrayList<Carta> rutaASeguir) {
         this.rutaASeguir = rutaASeguir;
     }
-    
-    //ToString
+
+    // ToString
     @Override
-    public String toString() 
-    {
+    public String toString() {
         return "Cartero{" +
                 "idCartero=" + idCartero +
                 ", listadoDeCartasDeCartero=" + listadoDeCartasDeCartero +
                 ", rutaASeguir=" + rutaASeguir +
                 '}';
     }
-    
+
     // Metodos de Cartero
-    public void actualizarCarta(Carta cartaAActualizar, String estadoDeLaCarta)
-    {
+    public void actualizarCarta(Carta cartaAActualizar, String estadoDeLaCarta) {
         System.out.println("Actualizar Carta");
         return;
     }

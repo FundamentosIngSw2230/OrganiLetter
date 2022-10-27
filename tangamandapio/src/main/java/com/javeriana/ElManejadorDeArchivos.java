@@ -76,6 +76,10 @@ public class ElManejadorDeArchivos {
             TypeReference<List<Cartero>> typeReference = new TypeReference<List<Cartero>>() {
             };
             lCarteros = mapper.readValue(is, typeReference);
+            for (Cartero c : lCarteros) {
+                System.out.println(c.getIdCartero() + " " + c.getListadoDeCartasDeCartero().toString() + " "
+                        + c.getListadoDeCartasDeCartero().toString());
+            }
 
             is.close();
 
