@@ -18,6 +18,7 @@ public class Planificador {
     private ArrayList<Carta> cartasRecogerNormal = new ArrayList<Carta>();
     private ArrayList<Carta> cartasEntregarExpres = new ArrayList<Carta>();
     private ArrayList<Carta> cartasRecogerExpres = new ArrayList<Carta>();
+    private ArrayList<Cartero> carteros = new ArrayList<Cartero>();
 
     // Constructores
     public Planificador(ArrayList<Carta> cartasEntregarNormal, ArrayList<Carta> cartasEntregarExpres) {
@@ -77,6 +78,20 @@ public class Planificador {
     public void ordenarCarta(Carta cartaAOrdenar) {
         System.out.println("Ordenar Carta");
         return;
+    }
+
+    //Generar arreglo de strings con las direcciones
+    public ArrayList<String> generarDirecciones() {
+        String calle = "calle";
+        String carrera = "carrera";
+        String direccion = null;
+        ArrayList<Carta> cartas = generarYAsignarRutaACartero();
+        ArrayList<String> direcciones = new ArrayList<String>();
+        for (Carta carta : cartas) {
+            direccion = calle + " " + carta.getCalleEntrega() + "," + carrera + " " + carta.getCarreraEntrega();
+            direcciones.add(direccion);
+        }
+        return direcciones;
     }
 
     // Metodo Generar y Asignar Ruta A Cartero
@@ -242,4 +257,6 @@ public class Planificador {
                 r.nextInt(alcanceMaxCalle), r.nextInt(alcanceMaxCarrera), estados[2], r.nextBoolean());
         return carta;
     }
+
+
 }
