@@ -130,18 +130,18 @@ public class Planificador {
                 if (contadorRutas == 1 || contadorRutas == 2) {
                     if (cartasEntregarExpres.size() > cartasRecogerExpres.size()) {
                         contadorRutas++;
-                        cartero.listadoDeCartasDeCartero.addAll(calcularRuta('c'));
+                        cartero.getListadoDeCartasDeCartero().addAll(calcularRuta('c'));
                     } else {
                         contadorRutas++;
-                        cartero.listadoDeCartasDeCartero.addAll(calcularRuta('d'));
+                        cartero.getListadoDeCartasDeCartero().addAll(calcularRuta('d'));
                     }
                 } else {
                     if (cartasEntregarNormal.size() > cartasRecogerNormal.size()) {
                         contadorRutas = 1;
-                        cartero.listadoDeCartasDeCartero.addAll(calcularRuta('a'));
+                        cartero.getListadoDeCartasDeCartero().addAll(calcularRuta('a'));
                     } else {
                         contadorRutas = 1;
-                        cartero.listadoDeCartasDeCartero.addAll(calcularRuta('b'));
+                        cartero.getListadoDeCartasDeCartero().addAll(calcularRuta('b'));
                     }
                 }
             }
@@ -290,14 +290,15 @@ public class Planificador {
         return carta;
     }
 
-    //funciones deprueba
-    public void imprimirC1(){
+    // funciones deprueba
+    public void imprimirC1() {
         for (Carta carta : cartasEntregarNormal) {
             System.out.println(carta.toString());
         }
     }
 
-    //retorna un arreglo de strings con las direcciones de entrega para un cartero don idCartero
+    // retorna un arreglo de strings con las direcciones de entrega para un cartero
+    // don idCartero
     public ArrayList<String> generarDirecciones(int idCartero) {
 
         String calle = "calle";
@@ -307,7 +308,7 @@ public class Planificador {
 
         for (Cartero cartero : carteros) {
             if (cartero.getIdCartero() == idCartero) {
-                for (Carta carta : cartero.listadoDeCartasDeCartero) {
+                for (Carta carta : cartero.getListadoDeCartasDeCartero()) {
                     direccion = calle + " " + carta.getCalleEntrega() + "," + carrera + " " + carta.getCarreraEntrega();
                     direcciones.add(direccion);
                 }
