@@ -53,7 +53,6 @@ public class ControladorInterfazPlanificador {
         System.out.println("Holaa, este es el boton de generar reporte");
     }
 
-
     // ----------------------------------------------------------------
     // GENERAR Y ASIGNAR RUTA
     @FXML
