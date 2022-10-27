@@ -80,21 +80,7 @@ public class Planificador {
         return;
     }
 
-    //Generar arreglo de strings con las direcciones
-    public ArrayList<String> generarDirecciones() {
-        String calle = "calle";
-        String carrera = "carrera";
-        String direccion = null;
-        ArrayList<Carta> cartas = generarYAsignarRutaACartero();
-        ArrayList<String> direcciones = new ArrayList<String>();
-        for (Carta carta : cartas) {
-            direccion = calle + " " + carta.getCalleEntrega() + "," + carrera + " " + carta.getCarreraEntrega();
-            direcciones.add(direccion);
-        }
-        return direcciones;
-    }
-
-    // Metodo Generar y Asignar Ruta A Cartero
+    // Metodo Generar y Asignar Ruta A Cartero.
     public ArrayList<Carta> generarYAsignarRutaACartero() {
 
         if (contadorRutas == 1 || contadorRutas == 2) {
