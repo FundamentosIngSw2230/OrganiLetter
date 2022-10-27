@@ -26,14 +26,15 @@ public class ElManejadorDeArchivos {
         List<Carta> lCartas = new ArrayList<Carta>();
         try {
             ObjectMapper mapper = new ObjectMapper();
-            InputStream is = new FileInputStream(new File("BDcartas.json"));
+            InputStream is = new FileInputStream(new File("tangamandapio\\BDcartas.json"));
             TypeReference<List<Carta>> typeReference = new TypeReference<List<Carta>>() {
             };
             lCartas = mapper.readValue(is, typeReference);
             for (Carta c : lCartas) {
-                System.out.println(c.getCalleEntrega() + '\t' + c.getCarreraEntrega() + '\t' + c.getEstadoDeCarta() + '\t'
-                        + c.getFechaDeDeposito() + '\t' + c.getFechaDeEntrega() + '\t' + c.isEsExpress()
-                        + '\t' + c.getIdCarta());
+                System.out
+                        .println(c.getCalleEntrega() + '\t' + c.getCarreraEntrega() + '\t' + c.getEstadoDeCarta() + '\t'
+                                + c.getFechaDeDeposito() + '\t' + c.getFechaDeEntrega() + '\t' + c.isEsExpress()
+                                + '\t' + c.getIdCarta());
             }
             is.close();
 
@@ -53,7 +54,7 @@ public class ElManejadorDeArchivos {
 
     public static synchronized void updateJsonFileCarta(Carta carta) throws IOException {
         ObjectMapper objectMapper = new ObjectMapper();
-        Path path = Paths.get("BdCartas.json");
+        Path path = Paths.get("tangamandapio\\BDcartas.json");
         final String currentJsonArrayAsString = Files.readString(path);
 
         try (FileWriter fileWriter = new FileWriter(path.toFile(), false)) {
@@ -76,8 +77,9 @@ public class ElManejadorDeArchivos {
             };
             lCarteros = mapper.readValue(is, typeReference);
             for (Cartero c : lCarteros) {
-                System.out.println(c.getIdCartero() + " " + c.getListadoDeCartasDeCartero().toString() + " "
-                        + c.getListadoDeCartasDeCartero().toString());
+                System.out.println(
+                        c.getIdCartero() + " " + c.getEstado() + " " + c.getListadoDeCartasDeCartero().toString() + " "
+                                + c.getListadoDeCartasDeCartero().toString());
             }
 
             is.close();

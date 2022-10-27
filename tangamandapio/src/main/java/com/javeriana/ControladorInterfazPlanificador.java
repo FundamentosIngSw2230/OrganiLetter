@@ -36,8 +36,7 @@ public class ControladorInterfazPlanificador {
     private Text textoNotificacionesPlanificador;
 
     @FXML
-    void PasarAInterfazInicial(ActionEvent event) throws IOException
-    {
+    void PasarAInterfazInicial(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("primary.fxml"));
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene scene = new Scene(root);
@@ -48,22 +47,19 @@ public class ControladorInterfazPlanificador {
     // ----------------------------------------------------------------
     // GENERAR REPORTE
     @FXML
-    void accionarBotonGenerarReporte(ActionEvent event)
-    {
+    void accionarBotonGenerarReporte(ActionEvent event) {
         System.out.println("Holaa, este es el boton de generar reporte");
     }
 
     // ----------------------------------------------------------------
     // GENERAR Y ASIGNAR RUTA
     @FXML
-    void accionarBotonGenerarYAsignarRuta(ActionEvent event)
-    {
+    void accionarBotonGenerarYAsignarRuta(ActionEvent event) {
         int idCarteroAsignado;
 
         System.out.println("Holaa, este es el boton de generar y asignar ruta");
 
-        try
-        {
+        try {
             idCarteroAsignado = Integer.parseInt(textoIdCarteroAsignarRuta.getText());
             System.out.println("El ID puesto en el campo es: " + idCarteroAsignado);
 
@@ -71,9 +67,7 @@ public class ControladorInterfazPlanificador {
 
             // Mientras tanto...
             textAreaRutaGenerada.setText(String.valueOf(idCarteroAsignado));
-        }
-        catch (NumberFormatException e)
-        {
+        } catch (NumberFormatException e) {
             textoNotificacionesPlanificador.setText(String.valueOf("Error, input invalido"));
             System.out.println("Error: " + e.getMessage());
         }
@@ -82,21 +76,17 @@ public class ControladorInterfazPlanificador {
     // ----------------------------------------------------------------
     // ORGANIZAR CARTA
     @FXML
-    void accionarBotonOrganizarCarta(ActionEvent event)
-    {
+    void accionarBotonOrganizarCarta(ActionEvent event) {
         int idCartaAOrdenar;
 
         System.out.println("Holaa, este es el boton organizar carta");
 
-        try
-        {
+        try {
             idCartaAOrdenar = Integer.parseInt(textoIdCartaOrdenar.getText());
             System.out.println("El ID puesto en el campo es: " + idCartaAOrdenar);
 
             textoNotificacionesPlanificador.setText("ID de la carta organizada: " + idCartaAOrdenar);
-        }
-        catch (NumberFormatException e)
-        {
+        } catch (NumberFormatException e) {
             textoNotificacionesPlanificador.setText(String.valueOf("Error, input invalido"));
             System.out.println("Error: " + e.getMessage());
         }
@@ -105,37 +95,38 @@ public class ControladorInterfazPlanificador {
     // ----------------------------------------------------------------
     // RECOGER BUZONES
     @FXML
-    void accionarBotonRecogerBuzones(ActionEvent event)
-    {
+    void accionarBotonRecogerBuzones(ActionEvent event) {
         int idCarteroAsignadoBuzonez;
 
         System.out.println("Holaa, este es el boton recoger buzones");
 
-        try
-        {
+        try {
             idCarteroAsignadoBuzonez = Integer.parseInt(textoIdCarteroBuzones.getText());
             System.out.println("El ID puesto en el campo es: " + idCarteroAsignadoBuzonez);
 
-            textoNotificacionesPlanificador.setText("ID del cartero asignado a recoger buzones: " + idCarteroAsignadoBuzonez);
-        }
-        catch (NumberFormatException e)
-        {
+            textoNotificacionesPlanificador
+                    .setText("ID del cartero asignado a recoger buzones: " + idCarteroAsignadoBuzonez);
+        } catch (NumberFormatException e) {
             textoNotificacionesPlanificador.setText(String.valueOf("Error, input invalido"));
             System.out.println("Error: " + e.getMessage());
         }
     }
 
-    //Generar arreglo de strings con las direcciones
+    // Generar arreglo de strings con las direcciones
+
     public ArrayList<String> generarDirecciones() {
         String calle = "calle";
         String carrera = "carrera";
         String direccion = null;
-        ArrayList<Carta> cartas = generarYAsignarRutaACartero();
+        ArrayList<Carta> cartas = new ArrayList<Carta>();
         ArrayList<String> direcciones = new ArrayList<String>();
         for (Carta carta : cartas) {
-            direccion = calle + " " + carta.getCalleEntrega() + "," + carrera + " " + carta.getCarreraEntrega();
+            direccion = calle + " " + carta.getCalleEntrega() + "," + carrera + " " +
+                    carta.getCarreraEntrega();
             direcciones.add(direccion);
         }
+
         return direcciones;
     }
+
 }
