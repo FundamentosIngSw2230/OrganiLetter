@@ -78,8 +78,8 @@ public class ElManejadorDeArchivos {
             lCarteros = mapper.readValue(is, typeReference);
             for (Cartero c : lCarteros) {
                 System.out.println(
-                        c.getIdCartero() + " " + c.getEstado() + " " + c.getListadoDeCartasDeCartero().toString() + " "
-                                + c.getListadoDeCartasDeCartero().toString());
+                        c.getIdCartero() + '\t' + c.getEstado() + '\t' + c.getListadoDeCartasDeCartero().toString()
+                                + '\t' + c.getListadoDeCartasDeCartero().toString());
             }
 
             is.close();

@@ -1,1 +1,123 @@
-[]
+[
+    {
+        "calleRecogida": 3,
+        "carreraRecogida": 30,
+        "fechaDeEntrega": "04-10-2020",
+        "idCarta": 0,
+        "calleEntrega": 31,
+        "esExpress": true,
+        "estadoDeCarta": "perdido",
+        "fechaDeDeposito": "27-06-2020",
+        "carreraEntrega": 24
+    },
+    {
+        "calleRecogida": 28,
+        "carreraRecogida": 40,
+        "fechaDeEntrega": "23-03-2020",
+        "idCarta": 1,
+        "calleEntrega": 4,
+        "esExpress": false,
+        "estadoDeCarta": "en ruta",
+        "fechaDeDeposito": "10-06-2020",
+        "carreraEntrega": 2
+    },
+    {
+        "calleRecogida": 26,
+        "carreraRecogida": 24,
+        "fechaDeEntrega": "23-11-2020",
+        "idCarta": 2,
+        "calleEntrega": 13,
+        "esExpress": false,
+        "estadoDeCarta": "en ruta",
+        "fechaDeDeposito": "23-10-2020",
+        "carreraEntrega": 34
+    },
+    {
+        "calleRecogida": 23,
+        "carreraRecogida": 23,
+        "fechaDeEntrega": "25-04-2020",
+        "idCarta": 3,
+        "calleEntrega": 33,
+        "esExpress": false,
+        "estadoDeCarta": "perdido",
+        "fechaDeDeposito": "15-10-2020",
+        "carreraEntrega": 15
+    },
+    {
+        "calleRecogida": 37,
+        "carreraRecogida": 26,
+        "fechaDeEntrega": "06-12-2020",
+        "idCarta": 4,
+        "calleEntrega": 5,
+        "esExpress": false,
+        "estadoDeCarta": "entregado",
+        "fechaDeDeposito": "11-07-2020",
+        "carreraEntrega": 22
+    },
+    {
+        "calleRecogida": 0,
+        "carreraRecogida": 0,
+        "fechaDeEntrega": "20-20-2021",
+        "idCarta": 2,
+        "calleEntrega": 4,
+        "esExpress": false,
+        "estadoDeCarta": "Enruta",
+        "fechaDeDeposito": "20-20-2020",
+        "carreraEntrega": 9
+    },
+    {
+        "calleRecogida": 0,
+        "carreraRecogida": 0,
+        "fechaDeEntrega": "20-20-2021",
+        "idCarta": 2,
+        "calleEntrega": 4,
+        "esExpress": false,
+        "estadoDeCarta": "Enruta",
+        "fechaDeDeposito": "20-20-2020",
+        "carreraEntrega": 9
+    },
+    {
+        "calleRecogida": 0,
+        "carreraRecogida": 0,
+        "fechaDeEntrega": "20-20-2021",
+        "idCarta": 2,
+        "calleEntrega": 4,
+        "esExpress": false,
+        "estadoDeCarta": "Enruta",
+        "fechaDeDeposito": "20-20-2020",
+        "carreraEntrega": 9
+    },
+    {
+        "calleRecogida": 0,
+        "carreraRecogida": 0,
+        "fechaDeEntrega": "20-20-2021",
+        "idCarta": 2,
+        "calleEntrega": 4,
+        "esExpress": false,
+        "estadoDeCarta": "Enruta",
+        "fechaDeDeposito": "20-20-2020",
+        "carreraEntrega": 9
+    },
+    {
+        "calleRecogida": 0,
+        "carreraRecogida": 0,
+        "fechaDeEntrega": "20-20-2021",
+        "idCarta": 2,
+        "calleEntrega": 4,
+        "esExpress": false,
+        "estadoDeCarta": "Enruta",
+        "fechaDeDeposito": "20-20-2020",
+        "carreraEntrega": 9
+    },
+    {
+        "calleRecogida": 0,
+        "carreraRecogida": 0,
+        "fechaDeEntrega": "20-20-2021",
+        "idCarta": 2,
+        "calleEntrega": 4,
+        "esExpress": false,
+        "estadoDeCarta": "Enruta",
+        "fechaDeDeposito": "20-20-2020",
+        "carreraEntrega": 9
+    }
+]
