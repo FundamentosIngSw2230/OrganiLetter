@@ -13,6 +13,7 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class ControladorInterfazPlanificador {
 
@@ -123,5 +124,19 @@ public class ControladorInterfazPlanificador {
             textoNotificacionesPlanificador.setText(String.valueOf("Error, input invalido"));
             System.out.println("Error: " + e.getMessage());
         }
+    }
+
+    //Generar arreglo de strings con las direcciones
+    public ArrayList<String> generarDirecciones() {
+        String calle = "calle";
+        String carrera = "carrera";
+        String direccion = null;
+        ArrayList<Carta> cartas = generarYAsignarRutaACartero();
+        ArrayList<String> direcciones = new ArrayList<String>();
+        for (Carta carta : cartas) {
+            direccion = calle + " " + carta.getCalleEntrega() + "," + carrera + " " + carta.getCarreraEntrega();
+            direcciones.add(direccion);
+        }
+        return direcciones;
     }
 }
