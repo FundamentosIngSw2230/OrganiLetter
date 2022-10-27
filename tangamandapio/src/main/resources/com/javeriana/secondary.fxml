@@ -10,7 +10,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="493.0" prefWidth="762.0" style="-fx-background-color: #DB3A34 #DB3A34; -fx-border-color: black; -fx-border-width: 3;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javeriana.ControladorInterfazPlanificador">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="466.0" prefWidth="762.0" style="-fx-background-color: #DB3A34 #DB3A34; -fx-border-color: black; -fx-border-width: 3;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javeriana.ControladorInterfazPlanificador">
    <children>
       <Pane layoutX="21.0" layoutY="14.0" prefHeight="60.0" prefWidth="356.0" style="-fx-background-color: #FFC857 #FFC857; -fx-border-color: #596869 #596869; -fx-border-radius: 10 10 10 10; -fx-background-radius: 15 15 15 15; -fx-border-width: 2;">
          <children>
@@ -21,7 +21,7 @@
             </Text>
          </children>
       </Pane>
-      <Button layoutX="21.0" layoutY="438.0" mnemonicParsing="false" onAction="#PasarAInterfazInicial" style="-fx-background-color: #CBEEF3;" text="Regresar al menú Principal" textFill="#364243">
+      <Button layoutX="21.0" layoutY="418.0" mnemonicParsing="false" onAction="#PasarAInterfazInicial" style="-fx-background-color: #CBEEF3;" text="Regresar al menú Principal" textFill="#364243">
          <font>
             <Font name="Futura Medium" size="13.0" />
          </font></Button>
@@ -46,29 +46,29 @@
       </Pane>
       <Pane layoutX="21.0" layoutY="217.0" prefHeight="123.0" prefWidth="720.0" style="-fx-background-color: #CDE6F5; -fx-border-color: #596869 #596869; -fx-border-radius: 10 10 10 10; -fx-background-radius: 15 15 15 15; -fx-border-width: 2;">
          <children>
-            <Text fill="#364243" layoutX="14.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Generar y Asignar Ruta a un Cartero">
+            <Text fill="#364243" layoutX="14.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Generar y Asignar Ruta a un Cartero" wrappingWidth="356.0">
                <font>
                   <Font name="Futura Medium" size="21.0" />
                </font>
             </Text>
-            <Text fill="#364243" layoutX="14.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID del cartero:">
+            <Text fill="#364243" layoutX="14.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID del cartero:">
                <font>
                   <Font name="Futura Medium" size="18.0" />
                </font>
             </Text>
-            <TextField fx:id="textoIdCarteroAsignarRuta" layoutX="140.0" layoutY="46.0" prefHeight="25.0" prefWidth="203.0" />
-            <Button layoutX="38.0" layoutY="84.0" mnemonicParsing="false" onAction="#accionarBotonGenerarYAsignarRuta" prefHeight="25.0" prefWidth="308.0" style="-fx-background-radius: 50;" text="Generar y Asignar :D :D :D" textFill="#364243">
+            <TextField fx:id="textoIdCarteroAsignarRuta" layoutX="141.0" layoutY="49.0" prefHeight="25.0" prefWidth="216.0" />
+            <Button layoutX="38.0" layoutY="88.0" mnemonicParsing="false" onAction="#accionarBotonGenerarYAsignarRuta" prefHeight="26.0" prefWidth="322.0" style="-fx-background-radius: 50;" text="Generar y Asignar :D :D :D" textFill="#364243">
                <font>
                   <Font name="Futura Medium" size="13.0" />
                </font></Button>
-            <TextArea fx:id="textAreaRutaGenerada" editable="false" layoutX="386.0" layoutY="9.0" prefHeight="105.0" prefWidth="322.0" promptText="Ruta Generada">
+            <TextArea fx:id="textAreaRutaGenerada" editable="false" layoutX="384.0" layoutY="9.0" prefHeight="105.0" prefWidth="322.0" promptText="Ruta Generada">
                <font>
                   <Font name="Comic Sans MS" size="13.0" />
                </font>
             </TextArea>
          </children>
       </Pane>
-      <Pane layoutX="21.0" layoutY="351.0" prefHeight="52.0" prefWidth="356.0" style="-fx-background-color: #CDE6F5; -fx-border-color: #596869 #596869; -fx-border-radius: 10 10 10 10; -fx-background-radius: 15 15 15 15; -fx-border-width: 2;">
+      <Pane layoutX="21.0" layoutY="348.0" prefHeight="52.0" prefWidth="356.0" style="-fx-background-color: #CDE6F5; -fx-border-color: #596869 #596869; -fx-border-radius: 10 10 10 10; -fx-background-radius: 15 15 15 15; -fx-border-width: 2;">
          <children>
             <Text fill="#364243" layoutX="14.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recoger Buzones:">
                <font>
@@ -82,7 +82,7 @@
             <TextField fx:id="textoIdCarteroBuzones" layoutX="146.0" layoutY="14.0" prefHeight="25.0" prefWidth="120.0" promptText="ID del Cartero" />
          </children>
       </Pane>
-      <Pane layoutX="381.0" layoutY="351.0" prefHeight="52.0" prefWidth="356.0" style="-fx-background-color: #CDE6F5; -fx-border-color: #596869 #596869; -fx-border-radius: 10 10 10 10; -fx-background-radius: 15 15 15 15; -fx-border-width: 2;">
+      <Pane layoutX="388.0" layoutY="348.0" prefHeight="52.0" prefWidth="356.0" style="-fx-background-color: #CDE6F5; -fx-border-color: #596869 #596869; -fx-border-radius: 10 10 10 10; -fx-background-radius: 15 15 15 15; -fx-border-width: 2;">
          <children>
             <Text fill="#364243" layoutX="14.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Generar Reporte:">
                <font>
@@ -95,7 +95,7 @@
                </font></Button>
          </children>
       </Pane>
-      <Pane layoutX="219.0" layoutY="430.0" prefHeight="41.0" prefWidth="520.0" style="-fx-background-color: #CDE6C5; -fx-border-color: #596869 #596869; -fx-border-radius: 10 10 10 10; -fx-background-radius: 15 15 15 15; -fx-border-width: 2;">
+      <Pane layoutX="221.0" layoutY="411.0" prefHeight="41.0" prefWidth="520.0" style="-fx-background-color: #CDE6C5; -fx-border-color: #596869 #596869; -fx-border-radius: 10 10 10 10; -fx-background-radius: 15 15 15 15; -fx-border-width: 2;">
          <children>
             <Text fx:id="textoNotificacionesPlanificador" layoutX="121.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- - Sin eventos - -" wrappingWidth="384.21630859375">
                <font>
@@ -109,7 +109,7 @@
             </Text>
          </children>
       </Pane>
-      <ImageView fx:id="imageViewLogoPlanificador" fitHeight="153.0" fitWidth="342.0" layoutX="395.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="imageViewLogoPlanificador" fitHeight="153.0" fitWidth="342.0" layoutX="395.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Logo%20Asereje.jpeg" />
          </image>
