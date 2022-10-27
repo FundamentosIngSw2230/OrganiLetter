@@ -2,6 +2,7 @@ package com.javeriana;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.Random;
 
@@ -14,11 +15,11 @@ public class Planificador {
     private short contadorRutas = 1;
     private short maxCartasAentregar = 10;
     private String[] estados = { "Reparto", "Recogida", "En oficina" };
-    private ArrayList<Carta> cartasEntregarNormal = new ArrayList<Carta>();
-    private ArrayList<Carta> cartasRecogerNormal = new ArrayList<Carta>();
-    private ArrayList<Carta> cartasEntregarExpres = new ArrayList<Carta>();
-    private ArrayList<Carta> cartasRecogerExpres = new ArrayList<Carta>();
-    private ArrayList<Cartero> carteros = new ArrayList<Cartero>();
+    ArrayList<Carta> cartasRecogerNormal = new ArrayList<Carta>();
+    ArrayList<Carta> cartasEntregarExpres = new ArrayList<Carta>();
+    ArrayList<Carta> cartasRecogerExpres = new ArrayList<Carta>();
+    ArrayList<Cartero> carteros = new ArrayList<Cartero>();
+    ArrayList<Carta> cartasEntregarNormal = new ArrayList<Carta>();
 
     // Constructores
     public Planificador(ArrayList<Carta> cartasEntregarNormal, ArrayList<Carta> cartasEntregarExpres) {
@@ -28,7 +29,49 @@ public class Planificador {
 
     // Getters & Setters
 
-    // Get Cartas Ordenadas
+    public ArrayList<Carta> getCartasEntregarNormal() {
+        return cartasEntregarNormal;
+    }
+
+    public void setCartasEntregarNormal(ArrayList<Carta> cartasEntregarNormal) {
+        this.cartasEntregarNormal = cartasEntregarNormal;
+    }
+
+    public ArrayList<Carta> getCartasRecogerNormal() {
+        return cartasRecogerNormal;
+    }
+
+    public void setCartasRecogerNormal(ArrayList<Carta> cartasRecogerNormal) {
+        this.cartasRecogerNormal = cartasRecogerNormal;
+    }
+
+    public ArrayList<Carta> getCartasEntregarExpres() {
+        return cartasEntregarExpres;
+    }
+
+    public void setCartasEntregarExpres(ArrayList<Carta> cartasEntregarExpres) {
+        this.cartasEntregarExpres = cartasEntregarExpres;
+    }
+
+    public ArrayList<Carta> getCartasRecogerExpres() {
+        return cartasRecogerExpres;
+    }
+
+    public void setCartasRecogerExpres(ArrayList<Carta> cartasRecogerExpres) {
+        this.cartasRecogerExpres = cartasRecogerExpres;
+    }
+
+    public ArrayList<Cartero> getCarteros() {
+        return carteros;
+    }
+
+    public void setCarteros(ArrayList<Cartero> carteros) {
+        this.carteros = carteros;
+    }
+
+    public Planificador() {
+    }
+
     public ArrayList<Carta> getcartasEntregarNormal() {
         return cartasEntregarNormal;
     }
@@ -49,28 +92,26 @@ public class Planificador {
         this.carreraOficina = carreraOficina;
     }
 
-    // Set Cartas Ordenadas
     public void setcartasEntregarNormal(ArrayList<Carta> cartasEntregarNormal) {
         this.cartasEntregarNormal = cartasEntregarNormal;
     }
 
-    // Get Cartas Express En Cola
     public ArrayList<Carta> getcartasEntregarExpres() {
         return cartasEntregarExpres;
     }
 
-    // Set Cartas Express En Cola
     public void setcartasEntregarExpres(ArrayList<Carta> cartasEntregarExpres) {
         this.cartasEntregarExpres = cartasEntregarExpres;
     }
 
-    // ToString
     @Override
     public String toString() {
-        return "Planificador{" +
-                "cartasEntregarNormal=" + cartasEntregarNormal +
-                ", cartasEntregarExpres=" + cartasEntregarExpres +
-                '}';
+        return "Planificador [calleOficina=" + calleOficina + ", carreraOficina=" + carreraOficina
+                + ", alcanceMaxCalle=" + alcanceMaxCalle + ", alcanceMaxCarrera=" + alcanceMaxCarrera
+                + ", contadorRutas=" + contadorRutas + ", maxCartasAentregar=" + maxCartasAentregar + ", estados="
+                + Arrays.toString(estados) + ", cartasEntregarNormal=" + cartasEntregarNormal + ", cartasRecogerNormal="
+                + cartasRecogerNormal + ", cartasEntregarExpres=" + cartasEntregarExpres + ", cartasRecogerExpres="
+                + cartasRecogerExpres + ", carteros=" + carteros + "]";
     }
 
     // Metodos de Planificador
@@ -81,23 +122,28 @@ public class Planificador {
     }
 
     // Metodo Generar y Asignar Ruta A Cartero.
-    public ArrayList<Carta> generarYAsignarRutaACartero() {
+    public void generarYAsignarRutaACartero(int idCartero) {
 
-        if (contadorRutas == 1 || contadorRutas == 2) {
-            if (cartasEntregarExpres.size() > cartasRecogerExpres.size()) {
-                contadorRutas++;
-                return calcularRuta('c');
-            } else {
-                contadorRutas++;
-                return calcularRuta('d');
-            }
-        } else {
-            if (cartasEntregarNormal.size() > cartasRecogerNormal.size()) {
-                contadorRutas = 1;
-                return calcularRuta('a');
-            } else {
-                contadorRutas = 1;
-                return calcularRuta('b');
+        for (Cartero cartero : carteros) {
+            if (cartero.getIdCartero() == idCartero) {
+                cartero.setEstado("en reparto");
+                if (contadorRutas == 1 || contadorRutas == 2) {
+                    if (cartasEntregarExpres.size() > cartasRecogerExpres.size()) {
+                        contadorRutas++;
+                        cartero.listadoDeCartasDeCartero.addAll(calcularRuta('c'));
+                    } else {
+                        contadorRutas++;
+                        cartero.listadoDeCartasDeCartero.addAll(calcularRuta('d'));
+                    }
+                } else {
+                    if (cartasEntregarNormal.size() > cartasRecogerNormal.size()) {
+                        contadorRutas = 1;
+                        cartero.listadoDeCartasDeCartero.addAll(calcularRuta('a'));
+                    } else {
+                        contadorRutas = 1;
+                        cartero.listadoDeCartasDeCartero.addAll(calcularRuta('b'));
+                    }
+                }
             }
         }
     }
@@ -244,5 +290,29 @@ public class Planificador {
         return carta;
     }
 
+    //funciones deprueba
+    public void imprimirC1(){
+        for (Carta carta : cartasEntregarNormal) {
+            System.out.println(carta.toString());
+        }
+    }
 
+    //retorna un arreglo de strings con las direcciones de entrega para un cartero don idCartero
+    public ArrayList<String> generarDirecciones(int idCartero) {
+
+        String calle = "calle";
+        String carrera = "carrera";
+        String direccion = null;
+        ArrayList<String> direcciones = new ArrayList<String>();
+
+        for (Cartero cartero : carteros) {
+            if (cartero.getIdCartero() == idCartero) {
+                for (Carta carta : cartero.listadoDeCartasDeCartero) {
+                    direccion = calle + " " + carta.getCalleEntrega() + "," + carrera + " " + carta.getCarreraEntrega();
+                    direcciones.add(direccion);
+                }
+            }
+        }
+        return direcciones;
+    }
 }
