@@ -1,742 +1,742 @@
 [
     {
-        "estado": "recogiendo",
-        "rutaASeguir": [
-            {
-                "calleRecogida": 3,
-                "carreraRecogida": 27,
-                "fechaDeEntrega": "01-09-2020",
-                "idCarta": 0,
-                "calleEntrega": 22,
-                "esExpress": false,
-                "estadoDeCarta": "perdido",
-                "fechaDeDeposito": "20-11-2020",
-                "carreraEntrega": 18
-            },
-            {
-                "calleRecogida": 6,
-                "carreraRecogida": 36,
-                "fechaDeEntrega": "03-06-2020",
-                "idCarta": 1,
-                "calleEntrega": 39,
-                "esExpress": true,
-                "estadoDeCarta": "perdido",
-                "fechaDeDeposito": "11-12-2020",
-                "carreraEntrega": 15
-            },
-            {
-                "calleRecogida": 11,
-                "carreraRecogida": 32,
-                "fechaDeEntrega": "03-12-2020",
-                "idCarta": 2,
-                "calleEntrega": 13,
-                "esExpress": true,
-                "estadoDeCarta": "perdido",
-                "fechaDeDeposito": "28-07-2020",
-                "carreraEntrega": 31
-            }
-        ],
+        "idCartero": 0,
+        "estado": "entregando",
         "listadoDeCartasDeCartero": [
             {
+                "idCarta": 0,
+                "fechaDeDeposito": "16-11-2020",
+                "fechaDeEntrega": "13-03-2020",
                 "calleRecogida": 17,
                 "carreraRecogida": 30,
-                "fechaDeEntrega": "13-03-2020",
-                "idCarta": 0,
                 "calleEntrega": 34,
-                "esExpress": true,
+                "carreraEntrega": 16,
                 "estadoDeCarta": "perdido",
-                "fechaDeDeposito": "16-11-2020",
-                "carreraEntrega": 16
+                "esExpress": true
             },
             {
+                "idCarta": 1,
+                "fechaDeDeposito": "19-12-2020",
+                "fechaDeEntrega": "12-03-2020",
                 "calleRecogida": 16,
                 "carreraRecogida": 16,
-                "fechaDeEntrega": "12-03-2020",
-                "idCarta": 1,
                 "calleEntrega": 29,
-                "esExpress": true,
+                "carreraEntrega": 36,
                 "estadoDeCarta": "en oficina",
-                "fechaDeDeposito": "19-12-2020",
-                "carreraEntrega": 36
+                "esExpress": true
             },
             {
+                "idCarta": 2,
+                "fechaDeDeposito": "08-05-2020",
+                "fechaDeEntrega": "18-05-2020",
                 "calleRecogida": 7,
                 "carreraRecogida": 16,
-                "fechaDeEntrega": "18-05-2020",
-                "idCarta": 2,
                 "calleEntrega": 37,
-                "esExpress": false,
+                "carreraEntrega": 2,
                 "estadoDeCarta": "en oficina",
-                "fechaDeDeposito": "08-05-2020",
-                "carreraEntrega": 2
+                "esExpress": false
             }
         ],
-        "idCartero": 0
-    },
-    {
-        "estado": "entregando",
         "rutaASeguir": [
             {
-                "calleRecogida": 32,
-                "carreraRecogida": 28,
-                "fechaDeEntrega": "11-11-2020",
                 "idCarta": 0,
-                "calleEntrega": 29,
-                "esExpress": false,
-                "estadoDeCarta": "en oficina",
-                "fechaDeDeposito": "11-04-2020",
-                "carreraEntrega": 33
-            },
-            {
-                "calleRecogida": 38,
-                "carreraRecogida": 4,
-                "fechaDeEntrega": "06-04-2020",
-                "idCarta": 1,
-                "calleEntrega": 40,
-                "esExpress": true,
-                "estadoDeCarta": "perdido",
-                "fechaDeDeposito": "13-12-2020",
-                "carreraEntrega": 6
-            },
-            {
-                "calleRecogida": 35,
-                "carreraRecogida": 39,
-                "fechaDeEntrega": "23-06-2020",
-                "idCarta": 2,
-                "calleEntrega": 38,
-                "esExpress": false,
-                "estadoDeCarta": "entregado",
-                "fechaDeDeposito": "19-03-2020",
-                "carreraEntrega": 35
-            }
-        ],
-        "listadoDeCartasDeCartero": [
-            {
-                "calleRecogida": 23,
-                "carreraRecogida": 12,
-                "fechaDeEntrega": "30-01-2020",
-                "idCarta": 0,
-                "calleEntrega": 17,
-                "esExpress": true,
-                "estadoDeCarta": "perdido",
-                "fechaDeDeposito": "31-05-2020",
-                "carreraEntrega": 11
-            },
-            {
-                "calleRecogida": 15,
-                "carreraRecogida": 18,
-                "fechaDeEntrega": "22-11-2020",
-                "idCarta": 1,
-                "calleEntrega": 27,
-                "esExpress": true,
-                "estadoDeCarta": "entregado",
-                "fechaDeDeposito": "02-08-2020",
-                "carreraEntrega": 8
-            },
-            {
-                "calleRecogida": 2,
-                "carreraRecogida": 22,
-                "fechaDeEntrega": "29-09-2020",
-                "idCarta": 2,
-                "calleEntrega": 25,
-                "esExpress": true,
-                "estadoDeCarta": "no Entregado",
-                "fechaDeDeposito": "07-03-2020",
-                "carreraEntrega": 6
-            }
-        ],
-        "idCartero": 1
-    },
-    {
-        "estado": "entregando",
-        "rutaASeguir": [
-            {
-                "calleRecogida": 12,
-                "carreraRecogida": 21,
-                "fechaDeEntrega": "14-01-2020",
-                "idCarta": 0,
-                "calleEntrega": 6,
-                "esExpress": false,
-                "estadoDeCarta": "en oficina",
-                "fechaDeDeposito": "21-04-2020",
-                "carreraEntrega": 26
-            },
-            {
-                "calleRecogida": 39,
-                "carreraRecogida": 33,
-                "fechaDeEntrega": "02-02-2020",
-                "idCarta": 1,
-                "calleEntrega": 40,
-                "esExpress": true,
-                "estadoDeCarta": "entregado",
-                "fechaDeDeposito": "16-11-2020",
-                "carreraEntrega": 13
-            },
-            {
-                "calleRecogida": 34,
-                "carreraRecogida": 13,
-                "fechaDeEntrega": "23-09-2020",
-                "idCarta": 2,
-                "calleEntrega": 38,
-                "esExpress": true,
-                "estadoDeCarta": "perdido",
-                "fechaDeDeposito": "14-02-2020",
-                "carreraEntrega": 40
-            }
-        ],
-        "listadoDeCartasDeCartero": [
-            {
-                "calleRecogida": 40,
-                "carreraRecogida": 9,
-                "fechaDeEntrega": "13-07-2020",
-                "idCarta": 0,
-                "calleEntrega": 31,
-                "esExpress": true,
-                "estadoDeCarta": "no Entregado",
-                "fechaDeDeposito": "12-03-2020",
-                "carreraEntrega": 6
-            },
-            {
+                "fechaDeDeposito": "20-11-2020",
+                "fechaDeEntrega": "01-09-2020",
                 "calleRecogida": 3,
-                "carreraRecogida": 33,
-                "fechaDeEntrega": "05-03-2020",
+                "carreraRecogida": 27,
+                "calleEntrega": 22,
+                "carreraEntrega": 18,
+                "estadoDeCarta": "perdido",
+                "esExpress": false
+            },
+            {
                 "idCarta": 1,
-                "calleEntrega": 21,
-                "esExpress": false,
-                "estadoDeCarta": "en ruta",
-                "fechaDeDeposito": "02-09-2020",
-                "carreraEntrega": 4
-            },
-            {
-                "calleRecogida": 33,
-                "carreraRecogida": 11,
-                "fechaDeEntrega": "02-12-2020",
-                "idCarta": 2,
-                "calleEntrega": 11,
-                "esExpress": true,
-                "estadoDeCarta": "perdido",
-                "fechaDeDeposito": "30-06-2020",
-                "carreraEntrega": 12
-            }
-        ],
-        "idCartero": 2
-    },
-    {
-        "estado": "entregando",
-        "rutaASeguir": [
-            {
-                "calleRecogida": 1,
-                "carreraRecogida": 34,
-                "fechaDeEntrega": "10-04-2020",
-                "idCarta": 0,
-                "calleEntrega": 28,
-                "esExpress": false,
-                "estadoDeCarta": "perdido",
-                "fechaDeDeposito": "17-01-2020",
-                "carreraEntrega": 1
-            },
-            {
+                "fechaDeDeposito": "11-12-2020",
+                "fechaDeEntrega": "03-06-2020",
                 "calleRecogida": 6,
                 "carreraRecogida": 36,
-                "fechaDeEntrega": "21-09-2020",
-                "idCarta": 1,
-                "calleEntrega": 14,
-                "esExpress": false,
-                "estadoDeCarta": "no Entregado",
-                "fechaDeDeposito": "11-10-2020",
-                "carreraEntrega": 16
+                "calleEntrega": 39,
+                "carreraEntrega": 15,
+                "estadoDeCarta": "perdido",
+                "esExpress": true
             },
             {
-                "calleRecogida": 19,
-                "carreraRecogida": 11,
-                "fechaDeEntrega": "31-03-2020",
                 "idCarta": 2,
-                "calleEntrega": 28,
-                "esExpress": false,
-                "estadoDeCarta": "entregado",
-                "fechaDeDeposito": "22-04-2020",
-                "carreraEntrega": 31
+                "fechaDeDeposito": "28-07-2020",
+                "fechaDeEntrega": "03-12-2020",
+                "calleRecogida": 11,
+                "carreraRecogida": 32,
+                "calleEntrega": 13,
+                "carreraEntrega": 31,
+                "estadoDeCarta": "perdido",
+                "esExpress": true
             }
-        ],
+        ]
+    },
+    {
+        "idCartero": 1,
+        "estado": "entregando",
         "listadoDeCartasDeCartero": [
             {
+                "idCarta": 0,
+                "fechaDeDeposito": "31-05-2020",
+                "fechaDeEntrega": "30-01-2020",
+                "calleRecogida": 23,
+                "carreraRecogida": 12,
+                "calleEntrega": 17,
+                "carreraEntrega": 11,
+                "estadoDeCarta": "perdido",
+                "esExpress": true
+            },
+            {
+                "idCarta": 1,
+                "fechaDeDeposito": "02-08-2020",
+                "fechaDeEntrega": "22-11-2020",
+                "calleRecogida": 15,
+                "carreraRecogida": 18,
+                "calleEntrega": 27,
+                "carreraEntrega": 8,
+                "estadoDeCarta": "entregado",
+                "esExpress": true
+            },
+            {
+                "idCarta": 2,
+                "fechaDeDeposito": "07-03-2020",
+                "fechaDeEntrega": "29-09-2020",
+                "calleRecogida": 2,
+                "carreraRecogida": 22,
+                "calleEntrega": 25,
+                "carreraEntrega": 6,
+                "estadoDeCarta": "no Entregado",
+                "esExpress": true
+            }
+        ],
+        "rutaASeguir": [
+            {
+                "idCarta": 0,
+                "fechaDeDeposito": "11-04-2020",
+                "fechaDeEntrega": "11-11-2020",
+                "calleRecogida": 32,
+                "carreraRecogida": 28,
+                "calleEntrega": 29,
+                "carreraEntrega": 33,
+                "estadoDeCarta": "en oficina",
+                "esExpress": false
+            },
+            {
+                "idCarta": 1,
+                "fechaDeDeposito": "13-12-2020",
+                "fechaDeEntrega": "06-04-2020",
+                "calleRecogida": 38,
+                "carreraRecogida": 4,
+                "calleEntrega": 40,
+                "carreraEntrega": 6,
+                "estadoDeCarta": "perdido",
+                "esExpress": true
+            },
+            {
+                "idCarta": 2,
+                "fechaDeDeposito": "19-03-2020",
+                "fechaDeEntrega": "23-06-2020",
+                "calleRecogida": 35,
+                "carreraRecogida": 39,
+                "calleEntrega": 38,
+                "carreraEntrega": 35,
+                "estadoDeCarta": "entregado",
+                "esExpress": false
+            }
+        ]
+    },
+    {
+        "idCartero": 2,
+        "estado": "entregando",
+        "listadoDeCartasDeCartero": [
+            {
+                "idCarta": 0,
+                "fechaDeDeposito": "12-03-2020",
+                "fechaDeEntrega": "13-07-2020",
+                "calleRecogida": 40,
+                "carreraRecogida": 9,
+                "calleEntrega": 31,
+                "carreraEntrega": 6,
+                "estadoDeCarta": "no Entregado",
+                "esExpress": true
+            },
+            {
+                "idCarta": 1,
+                "fechaDeDeposito": "02-09-2020",
+                "fechaDeEntrega": "05-03-2020",
+                "calleRecogida": 3,
+                "carreraRecogida": 33,
+                "calleEntrega": 21,
+                "carreraEntrega": 4,
+                "estadoDeCarta": "en ruta",
+                "esExpress": false
+            },
+            {
+                "idCarta": 2,
+                "fechaDeDeposito": "30-06-2020",
+                "fechaDeEntrega": "02-12-2020",
+                "calleRecogida": 33,
+                "carreraRecogida": 11,
+                "calleEntrega": 11,
+                "carreraEntrega": 12,
+                "estadoDeCarta": "perdido",
+                "esExpress": true
+            }
+        ],
+        "rutaASeguir": [
+            {
+                "idCarta": 0,
+                "fechaDeDeposito": "21-04-2020",
+                "fechaDeEntrega": "14-01-2020",
+                "calleRecogida": 12,
+                "carreraRecogida": 21,
+                "calleEntrega": 6,
+                "carreraEntrega": 26,
+                "estadoDeCarta": "en oficina",
+                "esExpress": false
+            },
+            {
+                "idCarta": 1,
+                "fechaDeDeposito": "16-11-2020",
+                "fechaDeEntrega": "02-02-2020",
+                "calleRecogida": 39,
+                "carreraRecogida": 33,
+                "calleEntrega": 40,
+                "carreraEntrega": 13,
+                "estadoDeCarta": "entregado",
+                "esExpress": true
+            },
+            {
+                "idCarta": 2,
+                "fechaDeDeposito": "14-02-2020",
+                "fechaDeEntrega": "23-09-2020",
+                "calleRecogida": 34,
+                "carreraRecogida": 13,
+                "calleEntrega": 38,
+                "carreraEntrega": 40,
+                "estadoDeCarta": "perdido",
+                "esExpress": true
+            }
+        ]
+    },
+    {
+        "idCartero": 3,
+        "estado": "entregando",
+        "listadoDeCartasDeCartero": [
+            {
+                "idCarta": 0,
+                "fechaDeDeposito": "31-05-2020",
+                "fechaDeEntrega": "06-11-2020",
                 "calleRecogida": 11,
                 "carreraRecogida": 13,
-                "fechaDeEntrega": "06-11-2020",
-                "idCarta": 0,
                 "calleEntrega": 7,
-                "esExpress": false,
+                "carreraEntrega": 21,
                 "estadoDeCarta": "entregado",
-                "fechaDeDeposito": "31-05-2020",
-                "carreraEntrega": 21
+                "esExpress": false
             },
             {
+                "idCarta": 1,
+                "fechaDeDeposito": "19-06-2020",
+                "fechaDeEntrega": "24-12-2020",
                 "calleRecogida": 38,
                 "carreraRecogida": 35,
-                "fechaDeEntrega": "24-12-2020",
-                "idCarta": 1,
                 "calleEntrega": 4,
-                "esExpress": false,
+                "carreraEntrega": 33,
                 "estadoDeCarta": "perdido",
-                "fechaDeDeposito": "19-06-2020",
-                "carreraEntrega": 33
+                "esExpress": false
             },
             {
+                "idCarta": 2,
+                "fechaDeDeposito": "16-10-2020",
+                "fechaDeEntrega": "08-08-2020",
                 "calleRecogida": 31,
                 "carreraRecogida": 6,
-                "fechaDeEntrega": "08-08-2020",
-                "idCarta": 2,
                 "calleEntrega": 38,
-                "esExpress": true,
+                "carreraEntrega": 13,
                 "estadoDeCarta": "perdido",
-                "fechaDeDeposito": "16-10-2020",
-                "carreraEntrega": 13
+                "esExpress": true
             }
         ],
-        "idCartero": 3
-    },
-    {
-        "estado": "entregando",
         "rutaASeguir": [
             {
-                "calleRecogida": 11,
-                "carreraRecogida": 1,
-                "fechaDeEntrega": "08-04-2020",
                 "idCarta": 0,
-                "calleEntrega": 25,
-                "esExpress": true,
-                "estadoDeCarta": "no Entregado",
-                "fechaDeDeposito": "22-09-2020",
-                "carreraEntrega": 33
+                "fechaDeDeposito": "17-01-2020",
+                "fechaDeEntrega": "10-04-2020",
+                "calleRecogida": 1,
+                "carreraRecogida": 34,
+                "calleEntrega": 28,
+                "carreraEntrega": 1,
+                "estadoDeCarta": "perdido",
+                "esExpress": false
             },
             {
-                "calleRecogida": 14,
-                "carreraRecogida": 12,
-                "fechaDeEntrega": "04-12-2020",
                 "idCarta": 1,
-                "calleEntrega": 12,
-                "esExpress": false,
-                "estadoDeCarta": "en oficina",
-                "fechaDeDeposito": "10-08-2020",
-                "carreraEntrega": 34
+                "fechaDeDeposito": "11-10-2020",
+                "fechaDeEntrega": "21-09-2020",
+                "calleRecogida": 6,
+                "carreraRecogida": 36,
+                "calleEntrega": 14,
+                "carreraEntrega": 16,
+                "estadoDeCarta": "no Entregado",
+                "esExpress": false
             },
             {
-                "calleRecogida": 25,
-                "carreraRecogida": 18,
-                "fechaDeEntrega": "27-11-2020",
                 "idCarta": 2,
-                "calleEntrega": 9,
-                "esExpress": true,
-                "estadoDeCarta": "en ruta",
-                "fechaDeDeposito": "20-12-2020",
-                "carreraEntrega": 31
+                "fechaDeDeposito": "22-04-2020",
+                "fechaDeEntrega": "31-03-2020",
+                "calleRecogida": 19,
+                "carreraRecogida": 11,
+                "calleEntrega": 28,
+                "carreraEntrega": 31,
+                "estadoDeCarta": "entregado",
+                "esExpress": false
             }
-        ],
+        ]
+    },
+    {
+        "idCartero": 4,
+        "estado": "entregando",
         "listadoDeCartasDeCartero": [
             {
+                "idCarta": 0,
+                "fechaDeDeposito": "18-01-2020",
+                "fechaDeEntrega": "27-04-2020",
                 "calleRecogida": 15,
                 "carreraRecogida": 24,
-                "fechaDeEntrega": "27-04-2020",
-                "idCarta": 0,
                 "calleEntrega": 39,
-                "esExpress": true,
+                "carreraEntrega": 3,
                 "estadoDeCarta": "en ruta",
-                "fechaDeDeposito": "18-01-2020",
-                "carreraEntrega": 3
+                "esExpress": true
             },
             {
+                "idCarta": 1,
+                "fechaDeDeposito": "20-04-2020",
+                "fechaDeEntrega": "05-02-2020",
                 "calleRecogida": 23,
                 "carreraRecogida": 8,
-                "fechaDeEntrega": "05-02-2020",
-                "idCarta": 1,
                 "calleEntrega": 36,
-                "esExpress": false,
+                "carreraEntrega": 21,
                 "estadoDeCarta": "en ruta",
-                "fechaDeDeposito": "20-04-2020",
-                "carreraEntrega": 21
+                "esExpress": false
             },
             {
+                "idCarta": 2,
+                "fechaDeDeposito": "29-09-2020",
+                "fechaDeEntrega": "01-10-2020",
                 "calleRecogida": 9,
                 "carreraRecogida": 33,
-                "fechaDeEntrega": "01-10-2020",
-                "idCarta": 2,
                 "calleEntrega": 18,
-                "esExpress": false,
+                "carreraEntrega": 31,
                 "estadoDeCarta": "entregado",
-                "fechaDeDeposito": "29-09-2020",
-                "carreraEntrega": 31
+                "esExpress": false
             }
         ],
-        "idCartero": 4
-    },
-    {
-        "estado": "entregando",
         "rutaASeguir": [
             {
-                "calleRecogida": 3,
-                "carreraRecogida": 16,
-                "fechaDeEntrega": "22-05-2020",
                 "idCarta": 0,
-                "calleEntrega": 16,
-                "esExpress": true,
-                "estadoDeCarta": "entregado",
-                "fechaDeDeposito": "27-08-2020",
-                "carreraEntrega": 16
-            },
-            {
-                "calleRecogida": 39,
-                "carreraRecogida": 17,
-                "fechaDeEntrega": "28-08-2020",
-                "idCarta": 1,
-                "calleEntrega": 24,
-                "esExpress": true,
-                "estadoDeCarta": "en ruta",
-                "fechaDeDeposito": "07-10-2020",
-                "carreraEntrega": 12
-            },
-            {
-                "calleRecogida": 2,
-                "carreraRecogida": 26,
-                "fechaDeEntrega": "29-02-2020",
-                "idCarta": 2,
-                "calleEntrega": 13,
-                "esExpress": true,
-                "estadoDeCarta": "no Entregado",
-                "fechaDeDeposito": "03-07-2020",
-                "carreraEntrega": 16
-            }
-        ],
-        "listadoDeCartasDeCartero": [
-            {
+                "fechaDeDeposito": "22-09-2020",
+                "fechaDeEntrega": "08-04-2020",
                 "calleRecogida": 11,
-                "carreraRecogida": 17,
-                "fechaDeEntrega": "25-11-2020",
-                "idCarta": 0,
-                "calleEntrega": 2,
-                "esExpress": false,
-                "estadoDeCarta": "perdido",
-                "fechaDeDeposito": "08-09-2020",
-                "carreraEntrega": 30
-            },
-            {
-                "calleRecogida": 14,
-                "carreraRecogida": 17,
-                "fechaDeEntrega": "09-01-2020",
-                "idCarta": 1,
-                "calleEntrega": 28,
-                "esExpress": true,
-                "estadoDeCarta": "no Entregado",
-                "fechaDeDeposito": "17-02-2020",
-                "carreraEntrega": 6
-            },
-            {
-                "calleRecogida": 13,
-                "carreraRecogida": 19,
-                "fechaDeEntrega": "01-02-2020",
-                "idCarta": 2,
-                "calleEntrega": 9,
-                "esExpress": true,
-                "estadoDeCarta": "en oficina",
-                "fechaDeDeposito": "31-08-2020",
-                "carreraEntrega": 15
-            }
-        ],
-        "idCartero": 5
-    },
-    {
-        "estado": "entregando",
-        "rutaASeguir": [
-            {
-                "calleRecogida": 24,
-                "carreraRecogida": 36,
-                "fechaDeEntrega": "25-07-2020",
-                "idCarta": 0,
-                "calleEntrega": 19,
-                "esExpress": false,
-                "estadoDeCarta": "entregado",
-                "fechaDeDeposito": "21-10-2020",
-                "carreraEntrega": 22
-            },
-            {
-                "calleRecogida": 13,
-                "carreraRecogida": 16,
-                "fechaDeEntrega": "26-12-2020",
-                "idCarta": 1,
-                "calleEntrega": 34,
-                "esExpress": false,
-                "estadoDeCarta": "no Entregado",
-                "fechaDeDeposito": "08-12-2020",
-                "carreraEntrega": 9
-            },
-            {
-                "calleRecogida": 3,
-                "carreraRecogida": 15,
-                "fechaDeEntrega": "24-12-2020",
-                "idCarta": 2,
-                "calleEntrega": 39,
-                "esExpress": true,
-                "estadoDeCarta": "en oficina",
-                "fechaDeDeposito": "10-05-2020",
-                "carreraEntrega": 34
-            }
-        ],
-        "listadoDeCartasDeCartero": [
-            {
-                "calleRecogida": 18,
-                "carreraRecogida": 5,
-                "fechaDeEntrega": "21-06-2020",
-                "idCarta": 0,
-                "calleEntrega": 31,
-                "esExpress": false,
-                "estadoDeCarta": "en ruta",
-                "fechaDeDeposito": "04-08-2020",
-                "carreraEntrega": 8
-            },
-            {
-                "calleRecogida": 34,
-                "carreraRecogida": 8,
-                "fechaDeEntrega": "17-11-2020",
-                "idCarta": 1,
-                "calleEntrega": 21,
-                "esExpress": false,
-                "estadoDeCarta": "en ruta",
-                "fechaDeDeposito": "20-06-2020",
-                "carreraEntrega": 5
-            },
-            {
-                "calleRecogida": 17,
-                "carreraRecogida": 29,
-                "fechaDeEntrega": "10-11-2020",
-                "idCarta": 2,
-                "calleEntrega": 33,
-                "esExpress": false,
-                "estadoDeCarta": "entregado",
-                "fechaDeDeposito": "26-01-2020",
-                "carreraEntrega": 7
-            }
-        ],
-        "idCartero": 6
-    },
-    {
-        "estado": "entregando",
-        "rutaASeguir": [
-            {
-                "calleRecogida": 28,
-                "carreraRecogida": 26,
-                "fechaDeEntrega": "16-08-2020",
-                "idCarta": 0,
-                "calleEntrega": 21,
-                "esExpress": true,
-                "estadoDeCarta": "en oficina",
-                "fechaDeDeposito": "15-04-2020",
-                "carreraEntrega": 29
-            },
-            {
-                "calleRecogida": 3,
-                "carreraRecogida": 14,
-                "fechaDeEntrega": "03-04-2020",
-                "idCarta": 1,
-                "calleEntrega": 40,
-                "esExpress": false,
-                "estadoDeCarta": "en oficina",
-                "fechaDeDeposito": "08-12-2020",
-                "carreraEntrega": 6
-            },
-            {
-                "calleRecogida": 24,
-                "carreraRecogida": 7,
-                "fechaDeEntrega": "25-02-2020",
-                "idCarta": 2,
-                "calleEntrega": 4,
-                "esExpress": true,
-                "estadoDeCarta": "perdido",
-                "fechaDeDeposito": "12-07-2020",
-                "carreraEntrega": 10
-            }
-        ],
-        "listadoDeCartasDeCartero": [
-            {
-                "calleRecogida": 37,
-                "carreraRecogida": 33,
-                "fechaDeEntrega": "05-12-2020",
-                "idCarta": 0,
-                "calleEntrega": 32,
-                "esExpress": false,
-                "estadoDeCarta": "en oficina",
-                "fechaDeDeposito": "17-04-2020",
-                "carreraEntrega": 17
-            },
-            {
-                "calleRecogida": 29,
-                "carreraRecogida": 24,
-                "fechaDeEntrega": "05-06-2020",
-                "idCarta": 1,
-                "calleEntrega": 33,
-                "esExpress": true,
-                "estadoDeCarta": "en ruta",
-                "fechaDeDeposito": "07-10-2020",
-                "carreraEntrega": 11
-            },
-            {
-                "calleRecogida": 15,
-                "carreraRecogida": 11,
-                "fechaDeEntrega": "18-03-2020",
-                "idCarta": 2,
-                "calleEntrega": 38,
-                "esExpress": false,
-                "estadoDeCarta": "no Entregado",
-                "fechaDeDeposito": "19-12-2020",
-                "carreraEntrega": 24
-            }
-        ],
-        "idCartero": 7
-    },
-    {
-        "estado": "entregando",
-        "rutaASeguir": [
-            {
-                "calleRecogida": 38,
                 "carreraRecogida": 1,
-                "fechaDeEntrega": "06-08-2020",
-                "idCarta": 0,
-                "calleEntrega": 10,
-                "esExpress": true,
-                "estadoDeCarta": "entregado",
-                "fechaDeDeposito": "06-07-2020",
-                "carreraEntrega": 19
+                "calleEntrega": 25,
+                "carreraEntrega": 33,
+                "estadoDeCarta": "no Entregado",
+                "esExpress": true
             },
             {
+                "idCarta": 1,
+                "fechaDeDeposito": "10-08-2020",
+                "fechaDeEntrega": "04-12-2020",
+                "calleRecogida": 14,
+                "carreraRecogida": 12,
+                "calleEntrega": 12,
+                "carreraEntrega": 34,
+                "estadoDeCarta": "en oficina",
+                "esExpress": false
+            },
+            {
+                "idCarta": 2,
+                "fechaDeDeposito": "20-12-2020",
+                "fechaDeEntrega": "27-11-2020",
                 "calleRecogida": 25,
                 "carreraRecogida": 18,
-                "fechaDeEntrega": "09-12-2020",
-                "idCarta": 1,
-                "calleEntrega": 17,
-                "esExpress": false,
-                "estadoDeCarta": "entregado",
-                "fechaDeDeposito": "16-07-2020",
-                "carreraEntrega": 6
-            },
-            {
-                "calleRecogida": 4,
-                "carreraRecogida": 11,
-                "fechaDeEntrega": "10-07-2020",
-                "idCarta": 2,
-                "calleEntrega": 28,
-                "esExpress": false,
-                "estadoDeCarta": "en oficina",
-                "fechaDeDeposito": "28-01-2020",
-                "carreraEntrega": 30
+                "calleEntrega": 9,
+                "carreraEntrega": 31,
+                "estadoDeCarta": "en ruta",
+                "esExpress": true
             }
-        ],
-        "listadoDeCartasDeCartero": [
-            {
-                "calleRecogida": 3,
-                "carreraRecogida": 39,
-                "fechaDeEntrega": "04-07-2020",
-                "idCarta": 0,
-                "calleEntrega": 6,
-                "esExpress": false,
-                "estadoDeCarta": "no Entregado",
-                "fechaDeDeposito": "15-12-2020",
-                "carreraEntrega": 15
-            },
-            {
-                "calleRecogida": 3,
-                "carreraRecogida": 24,
-                "fechaDeEntrega": "26-01-2020",
-                "idCarta": 1,
-                "calleEntrega": 30,
-                "esExpress": false,
-                "estadoDeCarta": "no Entregado",
-                "fechaDeDeposito": "06-02-2020",
-                "carreraEntrega": 10
-            },
-            {
-                "calleRecogida": 1,
-                "carreraRecogida": 29,
-                "fechaDeEntrega": "14-10-2020",
-                "idCarta": 2,
-                "calleEntrega": 33,
-                "esExpress": true,
-                "estadoDeCarta": "perdido",
-                "fechaDeDeposito": "23-05-2020",
-                "carreraEntrega": 23
-            }
-        ],
-        "idCartero": 8
+        ]
     },
     {
+        "idCartero": 5,
         "estado": "entregando",
-        "rutaASeguir": [
-            {
-                "calleRecogida": 23,
-                "carreraRecogida": 33,
-                "fechaDeEntrega": "15-07-2020",
-                "idCarta": 0,
-                "calleEntrega": 23,
-                "esExpress": true,
-                "estadoDeCarta": "en oficina",
-                "fechaDeDeposito": "12-01-2020",
-                "carreraEntrega": 17
-            },
-            {
-                "calleRecogida": 19,
-                "carreraRecogida": 19,
-                "fechaDeEntrega": "17-03-2020",
-                "idCarta": 1,
-                "calleEntrega": 19,
-                "esExpress": false,
-                "estadoDeCarta": "no Entregado",
-                "fechaDeDeposito": "18-03-2020",
-                "carreraEntrega": 13
-            },
-            {
-                "calleRecogida": 36,
-                "carreraRecogida": 17,
-                "fechaDeEntrega": "29-05-2020",
-                "idCarta": 2,
-                "calleEntrega": 20,
-                "esExpress": true,
-                "estadoDeCarta": "no Entregado",
-                "fechaDeDeposito": "07-03-2020",
-                "carreraEntrega": 16
-            }
-        ],
         "listadoDeCartasDeCartero": [
             {
-                "calleRecogida": 18,
-                "carreraRecogida": 26,
-                "fechaDeEntrega": "14-12-2020",
                 "idCarta": 0,
-                "calleEntrega": 29,
-                "esExpress": true,
-                "estadoDeCarta": "entregado",
-                "fechaDeDeposito": "21-12-2020",
-                "carreraEntrega": 32
+                "fechaDeDeposito": "08-09-2020",
+                "fechaDeEntrega": "25-11-2020",
+                "calleRecogida": 11,
+                "carreraRecogida": 17,
+                "calleEntrega": 2,
+                "carreraEntrega": 30,
+                "estadoDeCarta": "perdido",
+                "esExpress": false
             },
             {
-                "calleRecogida": 19,
-                "carreraRecogida": 21,
-                "fechaDeEntrega": "22-09-2020",
                 "idCarta": 1,
-                "calleEntrega": 40,
-                "esExpress": false,
-                "estadoDeCarta": "entregado",
-                "fechaDeDeposito": "23-08-2020",
-                "carreraEntrega": 31
+                "fechaDeDeposito": "17-02-2020",
+                "fechaDeEntrega": "09-01-2020",
+                "calleRecogida": 14,
+                "carreraRecogida": 17,
+                "calleEntrega": 28,
+                "carreraEntrega": 6,
+                "estadoDeCarta": "no Entregado",
+                "esExpress": true
             },
             {
-                "calleRecogida": 18,
-                "carreraRecogida": 1,
-                "fechaDeEntrega": "09-02-2020",
                 "idCarta": 2,
-                "calleEntrega": 11,
-                "esExpress": true,
-                "estadoDeCarta": "no Entregado",
-                "fechaDeDeposito": "22-12-2020",
-                "carreraEntrega": 40
+                "fechaDeDeposito": "31-08-2020",
+                "fechaDeEntrega": "01-02-2020",
+                "calleRecogida": 13,
+                "carreraRecogida": 19,
+                "calleEntrega": 9,
+                "carreraEntrega": 15,
+                "estadoDeCarta": "en oficina",
+                "esExpress": true
             }
         ],
-        "idCartero": 9
+        "rutaASeguir": [
+            {
+                "idCarta": 0,
+                "fechaDeDeposito": "27-08-2020",
+                "fechaDeEntrega": "22-05-2020",
+                "calleRecogida": 3,
+                "carreraRecogida": 16,
+                "calleEntrega": 16,
+                "carreraEntrega": 16,
+                "estadoDeCarta": "entregado",
+                "esExpress": true
+            },
+            {
+                "idCarta": 1,
+                "fechaDeDeposito": "07-10-2020",
+                "fechaDeEntrega": "28-08-2020",
+                "calleRecogida": 39,
+                "carreraRecogida": 17,
+                "calleEntrega": 24,
+                "carreraEntrega": 12,
+                "estadoDeCarta": "en ruta",
+                "esExpress": true
+            },
+            {
+                "idCarta": 2,
+                "fechaDeDeposito": "03-07-2020",
+                "fechaDeEntrega": "29-02-2020",
+                "calleRecogida": 2,
+                "carreraRecogida": 26,
+                "calleEntrega": 13,
+                "carreraEntrega": 16,
+                "estadoDeCarta": "no Entregado",
+                "esExpress": true
+            }
+        ]
+    },
+    {
+        "idCartero": 6,
+        "estado": "entregando",
+        "listadoDeCartasDeCartero": [
+            {
+                "idCarta": 0,
+                "fechaDeDeposito": "04-08-2020",
+                "fechaDeEntrega": "21-06-2020",
+                "calleRecogida": 18,
+                "carreraRecogida": 5,
+                "calleEntrega": 31,
+                "carreraEntrega": 8,
+                "estadoDeCarta": "en ruta",
+                "esExpress": false
+            },
+            {
+                "idCarta": 1,
+                "fechaDeDeposito": "20-06-2020",
+                "fechaDeEntrega": "17-11-2020",
+                "calleRecogida": 34,
+                "carreraRecogida": 8,
+                "calleEntrega": 21,
+                "carreraEntrega": 5,
+                "estadoDeCarta": "en ruta",
+                "esExpress": false
+            },
+            {
+                "idCarta": 2,
+                "fechaDeDeposito": "26-01-2020",
+                "fechaDeEntrega": "10-11-2020",
+                "calleRecogida": 17,
+                "carreraRecogida": 29,
+                "calleEntrega": 33,
+                "carreraEntrega": 7,
+                "estadoDeCarta": "entregado",
+                "esExpress": false
+            }
+        ],
+        "rutaASeguir": [
+            {
+                "idCarta": 0,
+                "fechaDeDeposito": "21-10-2020",
+                "fechaDeEntrega": "25-07-2020",
+                "calleRecogida": 24,
+                "carreraRecogida": 36,
+                "calleEntrega": 19,
+                "carreraEntrega": 22,
+                "estadoDeCarta": "entregado",
+                "esExpress": false
+            },
+            {
+                "idCarta": 1,
+                "fechaDeDeposito": "08-12-2020",
+                "fechaDeEntrega": "26-12-2020",
+                "calleRecogida": 13,
+                "carreraRecogida": 16,
+                "calleEntrega": 34,
+                "carreraEntrega": 9,
+                "estadoDeCarta": "no Entregado",
+                "esExpress": false
+            },
+            {
+                "idCarta": 2,
+                "fechaDeDeposito": "10-05-2020",
+                "fechaDeEntrega": "24-12-2020",
+                "calleRecogida": 3,
+                "carreraRecogida": 15,
+                "calleEntrega": 39,
+                "carreraEntrega": 34,
+                "estadoDeCarta": "en oficina",
+                "esExpress": true
+            }
+        ]
+    },
+    {
+        "idCartero": 7,
+        "estado": "entregando",
+        "listadoDeCartasDeCartero": [
+            {
+                "idCarta": 0,
+                "fechaDeDeposito": "17-04-2020",
+                "fechaDeEntrega": "05-12-2020",
+                "calleRecogida": 37,
+                "carreraRecogida": 33,
+                "calleEntrega": 32,
+                "carreraEntrega": 17,
+                "estadoDeCarta": "en oficina",
+                "esExpress": false
+            },
+            {
+                "idCarta": 1,
+                "fechaDeDeposito": "07-10-2020",
+                "fechaDeEntrega": "05-06-2020",
+                "calleRecogida": 29,
+                "carreraRecogida": 24,
+                "calleEntrega": 33,
+                "carreraEntrega": 11,
+                "estadoDeCarta": "en ruta",
+                "esExpress": true
+            },
+            {
+                "idCarta": 2,
+                "fechaDeDeposito": "19-12-2020",
+                "fechaDeEntrega": "18-03-2020",
+                "calleRecogida": 15,
+                "carreraRecogida": 11,
+                "calleEntrega": 38,
+                "carreraEntrega": 24,
+                "estadoDeCarta": "no Entregado",
+                "esExpress": false
+            }
+        ],
+        "rutaASeguir": [
+            {
+                "idCarta": 0,
+                "fechaDeDeposito": "15-04-2020",
+                "fechaDeEntrega": "16-08-2020",
+                "calleRecogida": 28,
+                "carreraRecogida": 26,
+                "calleEntrega": 21,
+                "carreraEntrega": 29,
+                "estadoDeCarta": "en oficina",
+                "esExpress": true
+            },
+            {
+                "idCarta": 1,
+                "fechaDeDeposito": "08-12-2020",
+                "fechaDeEntrega": "03-04-2020",
+                "calleRecogida": 3,
+                "carreraRecogida": 14,
+                "calleEntrega": 40,
+                "carreraEntrega": 6,
+                "estadoDeCarta": "en oficina",
+                "esExpress": false
+            },
+            {
+                "idCarta": 2,
+                "fechaDeDeposito": "12-07-2020",
+                "fechaDeEntrega": "25-02-2020",
+                "calleRecogida": 24,
+                "carreraRecogida": 7,
+                "calleEntrega": 4,
+                "carreraEntrega": 10,
+                "estadoDeCarta": "perdido",
+                "esExpress": true
+            }
+        ]
+    },
+    {
+        "idCartero": 8,
+        "estado": "entregando",
+        "listadoDeCartasDeCartero": [
+            {
+                "idCarta": 0,
+                "fechaDeDeposito": "15-12-2020",
+                "fechaDeEntrega": "04-07-2020",
+                "calleRecogida": 3,
+                "carreraRecogida": 39,
+                "calleEntrega": 6,
+                "carreraEntrega": 15,
+                "estadoDeCarta": "no Entregado",
+                "esExpress": false
+            },
+            {
+                "idCarta": 1,
+                "fechaDeDeposito": "06-02-2020",
+                "fechaDeEntrega": "26-01-2020",
+                "calleRecogida": 3,
+                "carreraRecogida": 24,
+                "calleEntrega": 30,
+                "carreraEntrega": 10,
+                "estadoDeCarta": "no Entregado",
+                "esExpress": false
+            },
+            {
+                "idCarta": 2,
+                "fechaDeDeposito": "23-05-2020",
+                "fechaDeEntrega": "14-10-2020",
+                "calleRecogida": 1,
+                "carreraRecogida": 29,
+                "calleEntrega": 33,
+                "carreraEntrega": 23,
+                "estadoDeCarta": "perdido",
+                "esExpress": true
+            }
+        ],
+        "rutaASeguir": [
+            {
+                "idCarta": 0,
+                "fechaDeDeposito": "06-07-2020",
+                "fechaDeEntrega": "06-08-2020",
+                "calleRecogida": 38,
+                "carreraRecogida": 1,
+                "calleEntrega": 10,
+                "carreraEntrega": 19,
+                "estadoDeCarta": "entregado",
+                "esExpress": true
+            },
+            {
+                "idCarta": 1,
+                "fechaDeDeposito": "16-07-2020",
+                "fechaDeEntrega": "09-12-2020",
+                "calleRecogida": 25,
+                "carreraRecogida": 18,
+                "calleEntrega": 17,
+                "carreraEntrega": 6,
+                "estadoDeCarta": "entregado",
+                "esExpress": false
+            },
+            {
+                "idCarta": 2,
+                "fechaDeDeposito": "28-01-2020",
+                "fechaDeEntrega": "10-07-2020",
+                "calleRecogida": 4,
+                "carreraRecogida": 11,
+                "calleEntrega": 28,
+                "carreraEntrega": 30,
+                "estadoDeCarta": "en oficina",
+                "esExpress": false
+            }
+        ]
+    },
+    {
+        "idCartero": 9,
+        "estado": "entregando",
+        "listadoDeCartasDeCartero": [
+            {
+                "idCarta": 0,
+                "fechaDeDeposito": "21-12-2020",
+                "fechaDeEntrega": "14-12-2020",
+                "calleRecogida": 18,
+                "carreraRecogida": 26,
+                "calleEntrega": 29,
+                "carreraEntrega": 32,
+                "estadoDeCarta": "entregado",
+                "esExpress": true
+            },
+            {
+                "idCarta": 1,
+                "fechaDeDeposito": "23-08-2020",
+                "fechaDeEntrega": "22-09-2020",
+                "calleRecogida": 19,
+                "carreraRecogida": 21,
+                "calleEntrega": 40,
+                "carreraEntrega": 31,
+                "estadoDeCarta": "entregado",
+                "esExpress": false
+            },
+            {
+                "idCarta": 2,
+                "fechaDeDeposito": "22-12-2020",
+                "fechaDeEntrega": "09-02-2020",
+                "calleRecogida": 18,
+                "carreraRecogida": 1,
+                "calleEntrega": 11,
+                "carreraEntrega": 40,
+                "estadoDeCarta": "no Entregado",
+                "esExpress": true
+            }
+        ],
+        "rutaASeguir": [
+            {
+                "idCarta": 0,
+                "fechaDeDeposito": "12-01-2020",
+                "fechaDeEntrega": "15-07-2020",
+                "calleRecogida": 23,
+                "carreraRecogida": 33,
+                "calleEntrega": 23,
+                "carreraEntrega": 17,
+                "estadoDeCarta": "en oficina",
+                "esExpress": true
+            },
+            {
+                "idCarta": 1,
+                "fechaDeDeposito": "18-03-2020",
+                "fechaDeEntrega": "17-03-2020",
+                "calleRecogida": 19,
+                "carreraRecogida": 19,
+                "calleEntrega": 19,
+                "carreraEntrega": 13,
+                "estadoDeCarta": "no Entregado",
+                "esExpress": false
+            },
+            {
+                "idCarta": 2,
+                "fechaDeDeposito": "07-03-2020",
+                "fechaDeEntrega": "29-05-2020",
+                "calleRecogida": 36,
+                "carreraRecogida": 17,
+                "calleEntrega": 20,
+                "carreraEntrega": 16,
+                "estadoDeCarta": "no Entregado",
+                "esExpress": true
+            }
+        ]
     }
 ]

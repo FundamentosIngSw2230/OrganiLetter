@@ -97,20 +97,70 @@ public class ElManejadorDeArchivos {
 
     }
 
-    public static synchronized void updateJsonFileCartero(Cartero carta) throws IOException {
+    public static synchronized void updateJsonFileCartero(Cartero cartero) throws IOException {
         ObjectMapper objectMapper = new ObjectMapper();
         Path path = Paths.get("tangamandapio\\BDcarteros.json");
         final String currentJsonArrayAsString = Files.readString(path);
 
         try (FileWriter fileWriter = new FileWriter(path.toFile(), false)) {
 
-            JSONObject jsonObject = new JSONObject(objectMapper.writeValueAsString(carta));
+            JSONObject jsonObject = new JSONObject(objectMapper.writeValueAsString(cartero));
             JSONArray jsonArray = new JSONArray(currentJsonArrayAsString);
             jsonArray.put(jsonObject);
 
             fileWriter.write(jsonArray.toString());
             fileWriter.close();
         }
+    }
+
+    public static void changeJsonAtributeCartero(int idCartero, String estadoACambiar) {
+        ElManejadorDeArchivos mA = new ElManejadorDeArchivos();
+        ArrayList<Cartero> lCarteros = mA.readJsonCartero();
+        boolean seEncontro = false;
+        while (seEncontro == false) {
+            int i = 0;
+            if (lCarteros.get(i).getIdCartero() == idCartero) {
+                seEncontro = true;
+                lCarteros.get(i).setEstado(estadoACambiar);
+
+            } else {
+                i++;
+            }
+        }
+
+        ObjectMapper mapper = new ObjectMapper();
+        try {
+            mapper.writeValue(new File("tangamandapio\\BDcarteros.json"), lCarteros);
+        } catch (IOException e) {
+
+            e.printStackTrace();
+        }
+
+    }
+
+    public static void changeJsonAtributeCarta(int idCarta, String estadoACambiar) {
+        ElManejadorDeArchivos mA = new ElManejadorDeArchivos();
+        ArrayList<Carta> lCartas = mA.readJsonCarta();
+        boolean seEncontro = false;
+        while (seEncontro == false) {
+            int i = 0;
+            if (lCartas.get(i).getIdCarta() == idCarta) {
+                seEncontro = true;
+                lCartas.get(i).setEstadoDeCarta(estadoACambiar);
+
+            } else {
+                i++;
+            }
+        }
+
+        ObjectMapper mapper = new ObjectMapper();
+        try {
+            mapper.writeValue(new File("tangamandapio\\BDcartas.json"), lCartas);
+        } catch (IOException e) {
+
+            e.printStackTrace();
+        }
+
     }
 
 }
