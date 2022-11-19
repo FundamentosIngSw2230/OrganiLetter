@@ -205,7 +205,6 @@ public class Planificador {
                 rutaCartas.add(cartaMasCercana);
                 cartasEntregarNormal.remove(cartaMasCercana);
             }
-            return rutaCartas;
         }
         if (tipoDeArreglo == 'b' && cartasRecogerNormal.size() != 0) {
             Carta cartaMasCercana = new Carta(calleOficina, carreraOficina, calleOficina, carreraOficina);
@@ -215,7 +214,6 @@ public class Planificador {
                 rutaCartas.add(cartaMasCercana);
                 cartasRecogerNormal.remove(cartaMasCercana);
             }
-            return rutaCartas;
         }
         if (tipoDeArreglo == 'c' && cartasEntregarExpres.size() != 0) {
             Carta cartaMasCercana = new Carta(calleOficina, carreraOficina, calleOficina, carreraOficina);
@@ -225,7 +223,6 @@ public class Planificador {
                 rutaCartas.add(cartaMasCercana);
                 cartasEntregarExpres.remove(cartaMasCercana);
             }
-            return rutaCartas;
         }
         if (tipoDeArreglo == 'd' && cartasRecogerExpres.size() != 0) {
             Carta cartaMasCercana = new Carta(calleOficina, carreraOficina, calleOficina, carreraOficina);
@@ -235,7 +232,6 @@ public class Planificador {
                 rutaCartas.add(cartaMasCercana);
                 cartasRecogerExpres.remove(cartaMasCercana);
             }
-            return rutaCartas;
         }
         return rutaCartas;
     }
