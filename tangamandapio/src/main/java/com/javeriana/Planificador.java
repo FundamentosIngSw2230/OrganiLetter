@@ -161,7 +161,6 @@ public class Planificador {
                     cartaMasCercana = carta;
                 }
             }
-            return cartaMasCercana;
         }
         if (tipoDeArreglo == 'b') {
             for (Carta carta : cartasRecogerNormal) {
@@ -169,7 +168,6 @@ public class Planificador {
                     cartaMasCercana = carta;
                 }
             }
-            return cartaMasCercana;
         }
         if (tipoDeArreglo == 'c') {
             for (Carta carta : cartasEntregarExpres) {
@@ -177,7 +175,6 @@ public class Planificador {
                     cartaMasCercana = carta;
                 }
             }
-            return cartaMasCercana;
         }
         if (tipoDeArreglo == 'd') {
             for (Carta carta : cartasRecogerExpres) {
@@ -185,7 +182,6 @@ public class Planificador {
                     cartaMasCercana = carta;
                 }
             }
-            return cartaMasCercana;
         }
         return cartaMasCercana;
     }
