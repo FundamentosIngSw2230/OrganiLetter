@@ -9,7 +9,7 @@ public class Carta {
     int carreraRecogida;
     int calleEntrega;
     int carreraEntrega;
-    String estadoDeCarta;
+    String estadoDeCarta; // EnBuzon, EnOficina, EnRutaRecogida, EnRutaEntrega, Entregada
     boolean esExpress;
 
     // Contructores
