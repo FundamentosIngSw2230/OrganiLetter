@@ -1,7 +1,7 @@
 [
     {
         "idCartero": 0,
-        "estado": "entregando",
+        "estado": "recibiendo",
         "listadoDeCartasDeCartero": [
             {
                 "idCarta": 0,

@@ -11,30 +11,26 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
-public class PrimaryController
-{
+public class PrimaryController {
     private Stage stage;
     private Scene scene;
-    private Parent root;
 
     @FXML
     private Button botonInterfazPlanificador;
 
     @FXML
-    void PasarAInterfazInicial(ActionEvent event) throws IOException
-    {
+    void PasarAInterfazInicial(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("primary.fxml"));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
     }
 
     @FXML
-    void PasarAInterfazPlanificador(ActionEvent event) throws IOException
-    {
+    void PasarAInterfazPlanificador(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("secondary.fxml"));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();

@@ -7,7 +7,7 @@
         "carreraRecogida": 30,
         "calleEntrega": 31,
         "carreraEntrega": 24,
-        "estadoDeCarta": "en ruta",
+        "estadoDeCarta": "perdido",
         "esExpress": true
     },
     {

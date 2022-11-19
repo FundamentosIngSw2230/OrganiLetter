@@ -38,7 +38,7 @@ public class ElManejadorDeArchivos {
             is.close();
 
         } catch (FileNotFoundException e) {
-            // TODO Auto-generated catch block
+
             e.printStackTrace();
         } catch (JsonParseException e) {
             e.printStackTrace();
@@ -84,7 +84,7 @@ public class ElManejadorDeArchivos {
             is.close();
 
         } catch (FileNotFoundException e) {
-            // TODO Auto-generated catch block
+
             e.printStackTrace();
         } catch (JsonParseException e) {
             e.printStackTrace();
@@ -124,6 +124,9 @@ public class ElManejadorDeArchivos {
                 lCarteros.get(i).setEstado(estadoACambiar);
 
             } else {
+                if (i == lCarteros.size()) {
+                    seEncontro = true;
+                }
                 i++;
             }
         }
@@ -144,11 +147,15 @@ public class ElManejadorDeArchivos {
         boolean seEncontro = false;
         while (seEncontro == false) {
             int i = 0;
+
             if (lCartas.get(i).getIdCarta() == idCarta) {
                 seEncontro = true;
                 lCartas.get(i).setEstadoDeCarta(estadoACambiar);
 
             } else {
+                if (i == lCartas.size()) {
+                    seEncontro = true;
+                }
                 i++;
             }
         }
