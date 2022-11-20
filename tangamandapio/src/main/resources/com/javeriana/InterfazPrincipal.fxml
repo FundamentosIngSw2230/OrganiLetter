@@ -11,16 +11,16 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="900.0" style="-fx-background-color: #DB3A34; -fx-border-color: black; -fx-border-width: 3;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javeriana.ControladorInterfazPrincipal">
    <children>
-      <Pane layoutX="182.0" layoutY="46.0" prefHeight="92.0" prefWidth="564.0" style="-fx-background-color: #FFC857; -fx-border-color: #596869; -fx-border-radius: 10 10 10 10; -fx-background-radius: 15 15 15 15; -fx-border-width: 2;">
+      <Pane layoutX="182.0" layoutY="38.0" prefHeight="100.0" prefWidth="564.0" style="-fx-background-color: #FFC857; -fx-border-color: #596869; -fx-border-radius: 10 10 10 10; -fx-background-radius: 15 15 15 15; -fx-border-width: 2.5;">
          <children>
-            <Text fill="#596869" layoutX="18.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Oficina Postal Tangamandapio" textAlignment="CENTER" wrappingWidth="510.3115234375">
+            <Text fill="#596869" layoutX="27.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Oficina Postal Tangamandapio" textAlignment="CENTER" wrappingWidth="510.3115234375">
                <font>
-                  <Font name="Futura Medium" size="30.0" />
+                  <Font name="Futura Medium" size="36.0" />
                </font>
             </Text>
-            <Text fill="#596869" layoutX="154.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Siempre a la orden :D" textAlignment="CENTER" wrappingWidth="238.3115234375">
+            <Text fill="#596869" layoutX="154.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Siempre a la orden :D" textAlignment="CENTER" wrappingWidth="238.3115234375">
                <font>
-                  <Font name="Futura Medium" size="19.0" />
+                  <Font name="Comic Sans MS Bold" size="19.0" />
                </font>
             </Text>
          </children>
