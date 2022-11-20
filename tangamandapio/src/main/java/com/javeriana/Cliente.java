@@ -2,6 +2,10 @@ package com.javeriana;
 
 public class Cliente
 {
+    
+    public Cliente() {
+    }
+
     // Metodos de la clase Cliente
     // Metodo Consultar Estado De La Carta
     public String consultarEstadoDeLaCarta (int idCarta)

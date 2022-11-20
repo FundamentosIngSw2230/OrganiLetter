@@ -65,13 +65,8 @@ public class ControladorInterfazPlanificador {
             textoNotificacionesPlanificador.setText("ID del cartero asignado: " + idCarteroAsignado);
 
             // Mientras tanto...
-            Planificador planificador = new Planificador(); 
-            ElManejadorDeArchivos manejadorDeArchivos = new ElManejadorDeArchivos();
-            planificador.carteros.addAll(manejadorDeArchivos.readJsonCartero());
-            planificador.cartasEntregarNormal.addAll(manejadorDeArchivos.readJsonCarta());
-            planificador.generarYAsignarRutaACartero(idCarteroAsignado);
-            ArrayList<String> direcciones = planificador.generarDirecciones(idCarteroAsignado);
-            textAreaRutaGenerada.setText(String.valueOf(direcciones));
+
+            //textAreaRutaGenerada.setText(String.valueOf(direcciones));
         } catch (NumberFormatException e) {
             textoNotificacionesPlanificador.setText(String.valueOf("Error, input invalido"));
             System.out.println("Error: " + e.getMessage());

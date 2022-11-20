@@ -118,8 +118,8 @@ public class Carta {
         this.estadoDeCarta = estadoDeCarta;
     }
 
-    // Get esExpress (is)
-    public boolean isEsExpress() {
+    // Get esExpress
+    public boolean getEsExpress() {
         return esExpress;
     }
 
@@ -151,5 +151,7 @@ public class Carta {
         }
 
     }
+
+    
 
 }

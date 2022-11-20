@@ -32,7 +32,7 @@ public class ElManejadorDeArchivos {
             for (Carta c : lCartas) {
                 System.out
                         .println(c.getCalleEntrega() + '\t' + c.getCarreraEntrega() + '\t' + c.getEstadoDeCarta() + '\t'
-                                + c.getFechaDeDeposito() + '\t' + c.getFechaDeEntrega() + '\t' + c.isEsExpress()
+                                + c.getFechaDeDeposito() + '\t' + c.getFechaDeEntrega() + '\t' + c.getEsExpress()
                                 + '\t' + c.getIdCarta());
             }
             is.close();
