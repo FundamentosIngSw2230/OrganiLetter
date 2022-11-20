@@ -23,7 +23,7 @@ public class PrimaryController
     @FXML
     void PasarAInterfazInicial(ActionEvent event) throws IOException
     {
-        Parent root = FXMLLoader.load(getClass().getResource("primary.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("InterfazPrincipal.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -33,7 +33,7 @@ public class PrimaryController
     @FXML
     void PasarAInterfazPlanificador(ActionEvent event) throws IOException
     {
-        Parent root = FXMLLoader.load(getClass().getResource("secondary.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("InterfazPlanificador.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
