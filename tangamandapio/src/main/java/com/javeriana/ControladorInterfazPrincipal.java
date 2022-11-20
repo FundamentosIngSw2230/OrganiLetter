@@ -35,4 +35,10 @@ public class ControladorInterfazPrincipal
         stage.show();
     }
 
+    @FXML
+    void PasarAInterfazReporte(ActionEvent event)
+    {
+        System.out.println("Hola");
+    }
+
 }
