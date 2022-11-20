@@ -21,7 +21,7 @@
             </Text>
          </children>
       </Pane>
-      <Button layoutX="21.0" layoutY="418.0" mnemonicParsing="false" onAction="#PasarAInterfazInicial" style="-fx-background-color: #CBEEF3;" text="Regresar al menú Principal" textFill="#364243">
+      <Button layoutX="21.0" layoutY="418.0" mnemonicParsing="false" onAction="#PasarAInterfazInicialDesdePlanificador" style="-fx-background-color: #CBEEF3;" text="Regresar al menú Principal" textFill="#364243">
          <font>
             <Font name="Futura Medium" size="13.0" />
          </font></Button>

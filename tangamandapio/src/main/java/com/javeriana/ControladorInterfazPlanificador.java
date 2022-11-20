@@ -34,8 +34,9 @@ public class ControladorInterfazPlanificador {
     @FXML
     private Text textoNotificacionesPlanificador;
 
+    // Pasar a la interfaz principal
     @FXML
-    void PasarAInterfazInicial(ActionEvent event) throws IOException
+    void PasarAInterfazInicialDesdePlanificador(ActionEvent event) throws IOException
     {
         Parent root = FXMLLoader.load(getClass().getResource("InterfazPrincipal.fxml"));
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
