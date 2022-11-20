@@ -13,7 +13,6 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.util.ArrayList;
 
 public class ControladorInterfazPlanificador {
 
