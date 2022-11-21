@@ -13,7 +13,7 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.util.ArrayList;
+import java.util.Objects;
 
 public class ControladorInterfazPlanificador {
 
@@ -35,14 +35,19 @@ public class ControladorInterfazPlanificador {
     @FXML
     private Text textoNotificacionesPlanificador;
 
+    // Pasar a la interfaz principal
     @FXML
-    void PasarAInterfazInicial(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("primary.fxml"));
+    void PasarAInterfazInicialDesdePlanificador(ActionEvent event) throws IOException
+    {
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("InterfazPrincipal.fxml")));
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
     }
+
+
+
 
     // ----------------------------------------------------------------
     // GENERAR REPORTE
@@ -65,13 +70,8 @@ public class ControladorInterfazPlanificador {
             textoNotificacionesPlanificador.setText("ID del cartero asignado: " + idCarteroAsignado);
 
             // Mientras tanto...
-            Planificador planificador = new Planificador(); 
-            ElManejadorDeArchivos manejadorDeArchivos = new ElManejadorDeArchivos();
-            planificador.carteros.addAll(manejadorDeArchivos.readJsonCartero());
-            planificador.cartasEntregarNormal.addAll(manejadorDeArchivos.readJsonCarta());
-            planificador.generarYAsignarRutaACartero(idCarteroAsignado);
-            ArrayList<String> direcciones = planificador.generarDirecciones(idCarteroAsignado);
-            textAreaRutaGenerada.setText(String.valueOf(direcciones));
+
+            //textAreaRutaGenerada.setText(String.valueOf(direcciones));
         } catch (NumberFormatException e) {
             textoNotificacionesPlanificador.setText(String.valueOf("Error, input invalido"));
             System.out.println("Error: " + e.getMessage());

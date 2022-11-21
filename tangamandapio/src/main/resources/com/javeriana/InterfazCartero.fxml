@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="466.0" prefWidth="762.0" style="-fx-background-color: #DB3A34 #DB3A34; -fx-border-color: black; -fx-border-width: 3;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javeriana.ControladorInterfazCartero">
+   <children>
+      <Pane layoutX="21.0" layoutY="14.0" prefHeight="60.0" prefWidth="356.0" style="-fx-background-color: #FFC857 #FFC857; -fx-border-color: #596869 #596869; -fx-border-radius: 10 10 10 10; -fx-background-radius: 15 15 15 15; -fx-border-width: 2;">
+         <children>
+            <Text fill="#596869" layoutX="110.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cartero">
+               <font>
+                  <Font name="Futura Medium" size="39.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Button layoutX="21.0" layoutY="418.0" mnemonicParsing="false" onAction="#PasarAInterfazInicialDesdeCartero" style="-fx-background-color: #CBEEF3;" text="Regresar al menú Principal" textFill="#364243">
+         <font>
+            <Font name="Futura Medium" size="13.0" />
+         </font>
+      </Button>
+      <Pane layoutX="19.0" layoutY="84.0" prefHeight="123.0" prefWidth="356.0" style="-fx-background-color: #CDE6F5; -fx-border-color: #596869 #596869; -fx-border-radius: 10 10 10 10; -fx-background-radius: 15 15 15 15; -fx-border-width: 2;">
+         <children>
+            <Text fill="#364243" layoutX="14.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Metodo #1">
+               <font>
+                  <Font name="Futura Medium" size="21.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="21.0" layoutY="217.0" prefHeight="180.0" prefWidth="356.0" style="-fx-background-color: #CDE6F5; -fx-border-color: #596869 #596869; -fx-border-radius: 10 10 10 10; -fx-background-radius: 15 15 15 15; -fx-border-width: 2;">
+         <children>
+            <Text fill="#364243" layoutX="14.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Metodo #2">
+               <font>
+                  <Font name="Futura Medium" size="21.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="221.0" layoutY="411.0" prefHeight="41.0" prefWidth="520.0" style="-fx-background-color: #CDE6C5; -fx-border-color: #596869 #596869; -fx-border-radius: 10 10 10 10; -fx-background-radius: 15 15 15 15; -fx-border-width: 2;">
+         <children>
+            <Text fill="#364243" layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Notificaciones:">
+               <font>
+                  <Font name="Futura Medium" size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <ImageView fx:id="imageViewLogoPlanificador" fitHeight="153.0" fitWidth="342.0" layoutX="395.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Logo%20Asereje.jpeg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="388.0" layoutY="217.0" prefHeight="180.0" prefWidth="356.0" style="-fx-background-color: #CDE6F5; -fx-border-color: #596869 #596869; -fx-border-radius: 10 10 10 10; -fx-background-radius: 15 15 15 15; -fx-border-width: 2;">
+         <children>
+            <Text fill="#364243" layoutX="14.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Metodo #3">
+               <font>
+                  <Font name="Futura Medium" size="21.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
