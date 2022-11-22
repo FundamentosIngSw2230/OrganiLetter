@@ -13,6 +13,7 @@ import java.util.Objects;
 public class ControladorInterfazPrincipal {
     private Stage stage;
     private Scene scene;
+    private Parent root;
 
     @FXML
     void PasarAInterfazPlanificador(ActionEvent event) throws IOException {
