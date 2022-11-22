@@ -8,6 +8,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
+import javafx.scene.control.ToggleGroup;
 import javafx.scene.image.ImageView;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
@@ -52,6 +53,12 @@ public class ControladorInterfazRecepcion
 
     @FXML
     private Text textoNotificacionesRecepcion;
+
+    @FXML
+    private ToggleGroup velocidadDeEnvio;
+
+    @FXML
+    private TextField buscarCartaRecepcion;
 
 
     // Pasar a la interfaz principal
@@ -212,6 +219,14 @@ public class ControladorInterfazRecepcion
     @FXML
     void BuscarCartaRecepcion(ActionEvent event)
     {
-        System.out.println("Holaa buscar");
+        // Sacar el ID de la carta a buscar
+        try
+        {
+            int idCartaABuscar = Integer.parseInt(buscarCartaRecepcion.getText());
+            textoNotificacionesRecepcion.setText("Buscando...");
+            // EXTRAER AQUI EL ID DE LA CARTA QUE SE VA A BUSCAR
+        }catch (NumberFormatException e) {
+            textoNotificacionesRecepcion.setText("El ID a buscar es incorrecto");
+        }
     }
 }
