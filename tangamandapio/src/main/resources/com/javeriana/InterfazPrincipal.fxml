@@ -40,6 +40,16 @@
             <Font name="Futura Medium" size="18.0" />
          </font>
       </Button>
+      <Button fx:id="botonInterfazRecepcion" layoutX="373.0" layoutY="440.0" mnemonicParsing="false" onAction="#PasarAInterfazRecepcion" prefHeight="61.0" prefWidth="154.0" style="-fx-background-color: #CBEEF3; -fx-border-color: #596869; -fx-border-radius: 10 10 10 10; -fx-background-radius: 15 15 15 15; -fx-border-width: 2;" text="Recepción" textAlignment="CENTER">
+         <font>
+            <Font name="Futura Medium" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="botonInterfazClientes" layoutX="550.0" layoutY="440.0" mnemonicParsing="false" onAction="#PasarAInterfazCliente" prefHeight="61.0" prefWidth="154.0" style="-fx-background-color: #CBEEF3; -fx-border-color: #596869; -fx-border-radius: 10 10 10 10; -fx-background-radius: 15 15 15 15; -fx-border-width: 2;" text="Clientes" textAlignment="CENTER">
+         <font>
+            <Font name="Futura Medium" size="20.0" />
+         </font>
+      </Button>
       <ImageView fx:id="logoAsereje" fitHeight="68.0" fitWidth="154.0" layoutX="14.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Logo%20Asereje.jpeg" />
@@ -75,20 +85,10 @@
             <Image url="@Logo%20Cliente.jpg" />
          </image>
       </ImageView>
-      <Button fx:id="botonInterfazClientes" layoutX="550.0" layoutY="440.0" mnemonicParsing="false" onAction="#PasarAInterfazCliente" prefHeight="61.0" prefWidth="154.0" style="-fx-background-color: #CBEEF3; -fx-border-color: #596869; -fx-border-radius: 10 10 10 10; -fx-background-radius: 15 15 15 15; -fx-border-width: 2;" text="Clientes" textAlignment="CENTER">
-         <font>
-            <Font name="Futura Medium" size="20.0" />
-         </font>
-      </Button>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffc857" height="228.0" layoutX="363.0" layoutY="215.0" stroke="BLACK" strokeType="INSIDE" width="175.0" />
-      <Button fx:id="botonInterfazRecepcion" layoutX="373.0" layoutY="440.0" mnemonicParsing="false" onAction="#PasarAInterfazRecepcion" prefHeight="61.0" prefWidth="154.0" style="-fx-background-color: #CBEEF3; -fx-border-color: #596869; -fx-border-radius: 10 10 10 10; -fx-background-radius: 15 15 15 15; -fx-border-width: 2;" text="Recepción" textAlignment="CENTER">
-         <font>
-            <Font name="Futura Medium" size="20.0" />
-         </font>
-      </Button>
       <ImageView fitHeight="210.0" fitWidth="154.0" layoutX="374.0" layoutY="222.0" pickOnBounds="true">
          <image>
-            <Image url="@Logo%20Cartero.jpg" />
+            <Image url="@Logo%20recepcion.png" />
          </image>
       </ImageView>
    </children>
