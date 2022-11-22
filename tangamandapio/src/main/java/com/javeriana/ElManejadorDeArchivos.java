@@ -118,8 +118,8 @@ public class ElManejadorDeArchivos {
     }
 
     public static void changeJsonAtributeCartero(int idCartero, String estadoACambiar) {
-        ElManejadorDeArchivos mA = new ElManejadorDeArchivos();
-        ArrayList<Cartero> lCarteros = mA.readJsonCartero();
+
+        ArrayList<Cartero> lCarteros = ElManejadorDeArchivos.readJsonCartero();
         boolean seEncontro = false;
         while (seEncontro == false) {
             int i = 0;
@@ -146,8 +146,8 @@ public class ElManejadorDeArchivos {
     }
 
     public static void changeJsonAtributeCarta(int idCarta, String estadoACambiar) {
-        ElManejadorDeArchivos mA = new ElManejadorDeArchivos();
-        ArrayList<Carta> lCartas = mA.readJsonCarta();
+
+        ArrayList<Carta> lCartas = ElManejadorDeArchivos.readJsonCarta();
         boolean seEncontro = false;
         while (seEncontro == false) {
             int i = 0;
