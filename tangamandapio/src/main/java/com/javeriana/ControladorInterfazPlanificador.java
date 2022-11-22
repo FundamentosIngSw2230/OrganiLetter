@@ -52,8 +52,9 @@ public class ControladorInterfazPlanificador {
     // ----------------------------------------------------------------
     // GENERAR REPORTE
     @FXML
-    void accionarBotonGenerarReporte(ActionEvent event) {
-        System.out.println("Holaa, este es el boton de generar reporte");
+    void accionarBotonActualizarCarta(ActionEvent event)
+    {
+        System.out.println("Holaa, este es el boton de actualizar carta");
     }
 
     // ----------------------------------------------------------------
