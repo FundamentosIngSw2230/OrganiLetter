@@ -66,12 +66,14 @@ public class ControladorInterfazRecepcion
     }
 
     // Registrar carta
+    @FXML
     void RegistrarCartaRecepcion(ActionEvent event)
     {
         System.out.println("Holaa");
     }
 
     // Buscar carta
+    @FXML
     void BuscarCartaRecepcion(ActionEvent event)
     {
         System.out.println("Holaa buscar");
