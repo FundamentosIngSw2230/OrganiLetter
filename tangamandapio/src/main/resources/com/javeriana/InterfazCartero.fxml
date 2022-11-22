@@ -53,11 +53,6 @@
             </Text>
          </children>
       </Pane>
-      <ImageView fx:id="imageViewLogoPlanificador" fitHeight="153.0" fitWidth="342.0" layoutX="395.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@Logo%20Asereje.jpeg" />
-         </image>
-      </ImageView>
       <Pane layoutX="19.0" layoutY="217.0" prefHeight="180.0" prefWidth="725.0" style="-fx-background-color: #CDE6F5; -fx-border-color: #596869 #596869; -fx-border-radius: 10 10 10 10; -fx-background-radius: 15 15 15 15; -fx-border-width: 2;">
          <children>
             <Text fill="#364243" layoutX="14.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vizualizar ruta:">
@@ -65,8 +60,18 @@
                   <Font name="Futura Medium" size="21.0" />
                </font>
             </Text>
-            <TextArea fx:id="vizualizarRutaCartero" layoutX="14.0" layoutY="42.0" prefHeight="123.0" prefWidth="695.0" />
+            <TextArea fx:id="vizualizarRutaCartero" layoutX="14.0" layoutY="42.0" prefHeight="123.0" prefWidth="600.0" />
+            <Button layoutX="622.0" layoutY="41.0" mnemonicParsing="false" onAction="#buscarRutaCartero" prefHeight="123.0" prefWidth="91.0" style="-fx-background-radius: 50;" text="Buscar Ruta" textFill="#364243">
+               <font>
+                  <Font name="Futura Medium" size="13.0" />
+               </font>
+            </Button>
          </children>
       </Pane>
+      <ImageView fx:id="imageViewLogoPlanificador" fitHeight="153.0" fitWidth="342.0" layoutX="395.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Logo%20Asereje.jpeg" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
