@@ -137,7 +137,7 @@ public class ControladorInterfazPlanificador {
 
             // Mientras tanto...
 
-            //textAreaRutaGenerada.setText(String.valueOf(direcciones));
+            textAreaRutaGenerada.setText(FachadaOrganiLetter.getRuta(idCarteroAsignado));
         } catch (NumberFormatException e) {
             textoNotificacionesPlanificador.setText(String.valueOf("Error, input invalido"));
             System.out.println("Error: " + e.getMessage());

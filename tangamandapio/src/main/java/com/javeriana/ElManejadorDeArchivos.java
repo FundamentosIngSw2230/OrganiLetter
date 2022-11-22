@@ -31,7 +31,7 @@ public class ElManejadorDeArchivos {
             ObjectMapper mapper = new ObjectMapper();
             // InputStream is = new FileInputStream(new
             // File("tangamandapio\\BDcartas.json"));
-            InputStream is = new FileInputStream(new File("BDcartas.json"));
+            InputStream is = new FileInputStream(new File("tangamandapio/BDcartas.json"));
             TypeReference<ArrayList<Carta>> typeReference = new TypeReference<ArrayList<Carta>>() {
             };
             lCartas = mapper.readValue(is, typeReference);
@@ -82,7 +82,7 @@ public class ElManejadorDeArchivos {
         ArrayList<Cartero> lCarteros = new ArrayList<Cartero>();
         try {
             ObjectMapper mapper = new ObjectMapper();
-            InputStream is = new FileInputStream(new File("BDcarteros.json"));
+            InputStream is = new FileInputStream(new File("tangamandapio/BDcarteros.json"));
             TypeReference<ArrayList<Cartero>> typeReference = new TypeReference<ArrayList<Cartero>>() {
             };
             lCarteros = mapper.readValue(is, typeReference);

@@ -20,13 +20,50 @@ public class FachadaOrganiLetter {
     public static void setPlanificador(Planificador planificador) {
         FachadaOrganiLetter.planificador = planificador;
     }
-/*
     //Metodos de FachadaOrganiLetter
     //retorna en arreglo con la direcciones. ej: {(calle 23, carrera 10), (calle 3, carrera 19), (calle 99, carrera 44)}
-    public static ArrayList<String> getRutaEntrega() {
-        
+    public static String getRuta(int idCartero) {
+        int requisitos = 0;
+        String ruta = new String();
+        ArrayList<Cartero> carteros = Planificador.getCarteros();
+
+        for (Cartero cartero : Planificador.getCarteros()) {
+            if (cartero.getIdCartero() == idCartero) {
+                requisitos++;
+                if (cartero.getEstado().equals("Disponible")){
+                    requisitos++;
+                    if (cartero.getListadoDeCartasDeCartero() == null || cartero.getListadoDeCartasDeCartero().size() == 0){                        
+                        requisitos++;
+                        planificador.generarYAsignarRutaACartero(idCartero);
+                    }
+                }
+            }
+        }
+        if (requisitos==0) {
+            ruta = "el id no existe";
+            return ruta;
+        }
+        if (requisitos==1) {
+            ruta = "el cartero no esta disponible";
+            return ruta;
+        }
+        if (requisitos==2) {
+            ruta = "el cartero no esta disponible";
+            return ruta;
+        }
+        if (requisitos==3) {
+            carteros = Planificador.getCarteros();
+            for (Cartero cartero : carteros) {
+                if (cartero.getIdCartero() == idCartero) {
+                    ruta = cartero.getDireccionesStr();
+                }
+            }
+            return ruta;
+        }
+        return ruta;
     }
 
+    /*
     //retorna un arreglo de string de la misma forma que el ejemplo anterior
     public static ArrayList<String> getRutaRecogida () {
         

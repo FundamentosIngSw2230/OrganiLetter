@@ -15,22 +15,24 @@ public class Planificador {
     private static int alcanceMaxCarrera = 100;
     private static short bifurcador = 1;
     private static short maxCartasAentregar = 10;
-    private static String[] estadosCarta = { "EnBuzon", "EnOficina", "EnRutaRecogida", "EnRutaEntrega", "Entregada" };
 
-    static ArrayList<Carta> cartasEntregarNormal;
-    static ArrayList<Carta> cartasRecogerNormal;
-    static ArrayList<Carta> cartasEntregarExpres;
-    static ArrayList<Carta> cartasRecogerExpres;
-    static ArrayList<Carta> cartasEntregadas;
-    static ArrayList<Cartero> carteros;
+    static ArrayList<Carta> cartasEntregarNormal = new ArrayList<>();
+    static ArrayList<Carta> cartasRecogerNormal = new ArrayList<>();
+    static ArrayList<Carta> cartasEntregarExpres = new ArrayList<>();
+    static ArrayList<Carta> cartasRecogerExpres = new ArrayList<>();
+    static ArrayList<Carta> cartasEntregadas = new ArrayList<>();
+    static ArrayList<Cartero> carteros = new ArrayList<>();
 
     // Constructores
     public Planificador() {
+        
         ElManejadorDeArchivos manejadorDeArchivos = new ElManejadorDeArchivos();
         ArrayList<Carta> cartasLeidas = ElManejadorDeArchivos.readJsonCarta();
+
         for (Carta carta : cartasLeidas) {
             ordenarCarta(carta);
         }
+
         carteros = ElManejadorDeArchivos.readJsonCartero();
     }
 
@@ -81,14 +83,6 @@ public class Planificador {
 
     public static void setMaxCartasAentregar(short maxCartasAentregar) {
         Planificador.maxCartasAentregar = maxCartasAentregar;
-    }
-
-    public static String[] getEstadosCarta() {
-        return estadosCarta;
-    }
-
-    public static void setEstadosCarta(String[] estadosCarta) {
-        Planificador.estadosCarta = estadosCarta;
     }
 
     public static ArrayList<Carta> getCartasEntregarNormal() {
@@ -143,26 +137,32 @@ public class Planificador {
     // Metodo Ordenar Carta -> guarda la carta en uno de los cuatro vectores de
     // acuerdo a su estado prioridad
     public void ordenarCarta(Carta cartaAOrdenar) {
-
+        
         switch (cartaAOrdenar.getEstadoDeCarta()) {
             case "EnBuzon":
-                if (cartaAOrdenar.getEsExpress() == true) {
-                    cartasRecogerExpres.add(cartaAOrdenar);
-                } else {
-                    cartasRecogerNormal.add(cartaAOrdenar);
-                }
-                break;
+
+            if (cartaAOrdenar.getEsExpress() == true) {
+                cartasRecogerExpres.add(cartaAOrdenar);
+            } else {
+                cartasRecogerNormal.add(cartaAOrdenar);
+            }
+            break;
             case "EnOficina":
+
                 if (cartaAOrdenar.getEsExpress() == true) {
+
                     cartasEntregarExpres.add(cartaAOrdenar);
                 } else {
+
                     cartasEntregarNormal.add(cartaAOrdenar);
                 }
                 break;
             case "Entregada":
+
                 cartasEntregadas.add(cartaAOrdenar);
                 break;
             default:
+
                 break;
         }
     }
@@ -172,22 +172,30 @@ public class Planificador {
 
         for (Cartero cartero : carteros) {
             if (cartero.getIdCartero() == idCartero) {
-                cartero.setEstado("en reparto");
                 if (bifurcador == 1 || bifurcador == 2) {
                     if (cartasEntregarExpres.size() > cartasRecogerExpres.size()) {
                         bifurcador++;
                         cartero.getListadoDeCartasDeCartero().addAll(calcularRuta('c'));
+                        cartero.setAllCartas("EnRutaEntrega");
+                        cartero.setEstado("EnReparto");
+
                     } else {
                         bifurcador++;
                         cartero.getListadoDeCartasDeCartero().addAll(calcularRuta('d'));
+                        cartero.setAllCartas("EnRutaRecogida");
+                        cartero.setEstado("Recogiendo");
                     }
                 } else {
                     if (cartasEntregarNormal.size() > cartasRecogerNormal.size()) {
                         bifurcador = 1;
                         cartero.getListadoDeCartasDeCartero().addAll(calcularRuta('a'));
+                        cartero.setAllCartas("EnRutaEntrega");
+                        cartero.setEstado("EnReparto");
                     } else {
                         bifurcador = 1;
                         cartero.getListadoDeCartasDeCartero().addAll(calcularRuta('b'));
+                        cartero.setAllCartas("EnRutaRecogida");
+                        cartero.setEstado("Recogiendo");
                     }
                 }
             }
@@ -285,7 +293,7 @@ public class Planificador {
     }
 
     // buscar el id de una carta
-    public boolean buscarId(int id) {
+    public boolean buscarIdCarta(int id) {
 
         for (Carta carta : cartasEntregarNormal) {
             if (carta.idCarta == id) {
@@ -314,41 +322,20 @@ public class Planificador {
     public int generarId() {
 
         int idNuevo = 0;
-        while (buscarId(idNuevo) == true) {
+        while (buscarIdCarta(idNuevo) == true) {
             idNuevo++;
         }
         return idNuevo;
     }
 
-    // Genera cartas aleatoriamente
-    public Carta generarCartaAleatoria() {
-
-        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/YYYY");
-        Date fechaActual = new Date();
-        Random r = new Random();
-        Carta carta = new Carta(generarId(), sdf.format(fechaActual), null, calleOficina, carreraOficina,
-                r.nextInt(alcanceMaxCalle), r.nextInt(alcanceMaxCarrera), estadosCarta[2], r.nextBoolean());
-        return carta;
-    }
-
-    // retorna un arreglo de strings con las direcciones de entrega para un cartero
-    // don idCartero
-    public ArrayList<String> generarDirecciones(int idCartero) {
-
-        String calle = "calle";
-        String carrera = "carrera";
-        String direccion = null;
-        ArrayList<String> direcciones = new ArrayList<String>();
-
+    public boolean buscarIdCartero(int idCartero){
+        boolean resultado = false;
         for (Cartero cartero : carteros) {
             if (cartero.getIdCartero() == idCartero) {
-                for (Carta carta : cartero.getListadoDeCartasDeCartero()) {
-                    direccion = calle + " " + carta.getCalleEntrega() + "," + carrera + " " + carta.getCarreraEntrega();
-                    direcciones.add(direccion);
-                }
+                resultado = true;
             }
         }
-        return direcciones;
+        return resultado;
     }
 
 }

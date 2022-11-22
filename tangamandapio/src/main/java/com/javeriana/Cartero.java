@@ -5,17 +5,14 @@ import java.util.ArrayList;
 public class Cartero {
     // Declaración de variables
     private int idCartero;
-    private String estado;
+    private String estado; //EnReparto Recogiendo Disponible
     private ArrayList<Carta> listadoDeCartasDeCartero = null;
-    private ArrayList<Carta> rutaASeguir = null;
 
     // Constructores
-    public Cartero(int idCartero, String estado, ArrayList<Carta> listadoDeCartasDeCartero,
-            ArrayList<Carta> rutaASeguir) {
+    public Cartero(int idCartero, String estado, ArrayList<Carta> listadoDeCartasDeCartero) {
         this.idCartero = idCartero;
         this.estado = estado;
         this.listadoDeCartasDeCartero = listadoDeCartasDeCartero;
-        this.rutaASeguir = rutaASeguir;
     }
 
     public Cartero() {
@@ -53,30 +50,37 @@ public class Cartero {
         this.listadoDeCartasDeCartero = listadoDeCartasDeCartero;
     }
 
-    // Get ruta a seguir
-    public ArrayList<Carta> getRutaASeguir() {
-        return rutaASeguir;
-    }
-
-    // Set ruta a seguir
-    public void setRutaASeguir(ArrayList<Carta> rutaASeguir) {
-        this.rutaASeguir = rutaASeguir;
-    }
-
-    // ToString
     @Override
     public String toString() {
-        return "Cartero{" +
-                "idCartero=" + idCartero +
-                ", listadoDeCartasDeCartero=" + listadoDeCartasDeCartero +
-                ", rutaASeguir=" + rutaASeguir +
-                '}';
+        return "Cartero [idCartero=" + idCartero + ", estado=" + estado + ", listadoDeCartasDeCartero="
+                + listadoDeCartasDeCartero + "]";
     }
 
     // Metodos de Cartero
     public void actualizarCarta(Carta cartaAActualizar, String estadoDeLaCarta) {
         System.out.println("Actualizar Carta");
         return;
+    }
+
+    public void setAllCartas(String string) {
+        for (Carta carta : listadoDeCartasDeCartero) {
+            carta.setEstadoDeCarta(string);
+        }
+    }
+//EnReparto Recogiendo Disponible
+    public String getDireccionesStr(){
+        String direcciones = new String("");
+        if (estado.equals("EnReparto")) {
+            for (Carta carta : listadoDeCartasDeCartero) {
+                direcciones = new String(direcciones+"[Calle: " + carta.getCalleEntrega() + ", Carrera: " + carta.getCarreraEntrega()+"] ");
+            }
+        }
+        if (estado.equals("Recogiendo")) {
+            for (Carta carta : listadoDeCartasDeCartero) {
+                direcciones = new String(direcciones+"[Calle: " + carta.getCalleEntrega() + ", Carrera: " + carta.getCarreraEntrega()+"] ");
+            }
+        }
+        return direcciones;
     }
 
 }
