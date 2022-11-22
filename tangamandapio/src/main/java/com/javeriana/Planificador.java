@@ -6,7 +6,6 @@ import java.util.Arrays;
 import java.util.Date;
 import java.util.Random;
 
-
 public class Planificador {
 
     // Declaración de variables
@@ -16,8 +15,8 @@ public class Planificador {
     private static int alcanceMaxCarrera = 100;
     private static short bifurcador = 1;
     private static short maxCartasAentregar = 10;
-    private static String[] estadosCarta = {"EnBuzon", "EnOficina", "EnRutaRecogida", "EnRutaEntrega", "Entregada"};
-    
+    private static String[] estadosCarta = { "EnBuzon", "EnOficina", "EnRutaRecogida", "EnRutaEntrega", "Entregada" };
+
     static ArrayList<Carta> cartasEntregarNormal;
     static ArrayList<Carta> cartasRecogerNormal;
     static ArrayList<Carta> cartasEntregarExpres;
@@ -28,13 +27,13 @@ public class Planificador {
     // Constructores
     public Planificador() {
         ElManejadorDeArchivos manejadorDeArchivos = new ElManejadorDeArchivos();
-        ArrayList<Carta> cartasLeidas = manejadorDeArchivos.readJsonCarta();
+        ArrayList<Carta> cartasLeidas = ElManejadorDeArchivos.readJsonCarta();
         for (Carta carta : cartasLeidas) {
             ordenarCarta(carta);
         }
-        carteros = manejadorDeArchivos.readJsonCartero();
+        carteros = ElManejadorDeArchivos.readJsonCartero();
     }
-    
+
     // Getters & Setters
     public static int getCalleOficina() {
         return calleOficina;
@@ -141,9 +140,10 @@ public class Planificador {
     }
 
     // Metodos de Planificador
-    // Metodo Ordenar Carta -> guarda la carta en uno de los cuatro vectores de acuerdo a su estado prioridad
+    // Metodo Ordenar Carta -> guarda la carta en uno de los cuatro vectores de
+    // acuerdo a su estado prioridad
     public void ordenarCarta(Carta cartaAOrdenar) {
-        
+
         switch (cartaAOrdenar.getEstadoDeCarta()) {
             case "EnBuzon":
                 if (cartaAOrdenar.getEsExpress() == true) {
