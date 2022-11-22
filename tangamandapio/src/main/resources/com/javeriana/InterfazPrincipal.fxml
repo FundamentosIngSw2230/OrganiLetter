@@ -25,17 +25,17 @@
             </Text>
          </children>
       </Pane>
-      <Button fx:id="botonInterfazPlanificador" layoutX="71.0" layoutY="440.0" mnemonicParsing="false" onAction="#PasarAInterfazPlanificador" prefHeight="61.0" prefWidth="154.0" style="-fx-background-color: #CBEEF3; -fx-border-color: #596869; -fx-border-radius: 10 10 10 10; -fx-background-radius: 15 15 15 15; -fx-border-width: 2;" text="Planificador" textAlignment="CENTER">
+      <Button fx:id="botonInterfazPlanificador" layoutX="18.0" layoutY="440.0" mnemonicParsing="false" onAction="#PasarAInterfazPlanificador" prefHeight="61.0" prefWidth="154.0" style="-fx-background-color: #CBEEF3; -fx-border-color: #596869; -fx-border-radius: 10 10 10 10; -fx-background-radius: 15 15 15 15; -fx-border-width: 2;" text="Planificador" textAlignment="CENTER">
          <font>
             <Font name="Futura Medium" size="20.0" />
          </font>
       </Button>
-      <Button fx:id="botonInterfazCartero" layoutX="313.0" layoutY="440.0" mnemonicParsing="false" onAction="#PasarAInterfazCartero" prefHeight="61.0" prefWidth="154.0" style="-fx-background-color: #CBEEF3; -fx-border-color: #596869; -fx-border-radius: 10 10 10 10; -fx-background-radius: 15 15 15 15; -fx-border-width: 2;" text="Cartero" textAlignment="CENTER">
+      <Button fx:id="botonInterfazCartero" layoutX="196.0" layoutY="440.0" mnemonicParsing="false" onAction="#PasarAInterfazCartero" prefHeight="61.0" prefWidth="154.0" style="-fx-background-color: #CBEEF3; -fx-border-color: #596869; -fx-border-radius: 10 10 10 10; -fx-background-radius: 15 15 15 15; -fx-border-width: 2;" text="Cartero" textAlignment="CENTER">
          <font>
             <Font name="Futura Medium" size="20.0" />
          </font>
       </Button>
-      <Button fx:id="botonInterfazReporte" layoutX="542.0" layoutY="440.0" mnemonicParsing="false" onAction="#PasarAInterfazReporte" prefHeight="61.0" prefWidth="325.0" style="-fx-background-color: #CBEEF3; -fx-border-color: #596869; -fx-border-radius: 10 10 10 10; -fx-background-radius: 15 15 15 15; -fx-border-width: 2;" text="Ver reporte de la Oficina Postal" textAlignment="CENTER">
+      <Button fx:id="botonInterfazReporte" layoutX="718.0" layoutY="440.0" mnemonicParsing="false" onAction="#PasarAInterfazReporte" prefHeight="61.0" prefWidth="175.0" style="-fx-background-color: #CBEEF3; -fx-border-color: #596869; -fx-border-radius: 10 10 10 10; -fx-background-radius: 15 15 15 15; -fx-border-width: 2;" text="Ver reporte de la Oficina Postal" textAlignment="CENTER">
          <font>
             <Font name="Futura Medium" size="18.0" />
          </font>
@@ -50,23 +50,45 @@
             <Image url="@Logo%20Javeriana.png" />
          </image>
       </ImageView>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffc857" height="228.0" layoutX="61.0" layoutY="213.0" stroke="BLACK" strokeType="INSIDE" width="175.0" />
-      <ImageView fitHeight="220.0" fitWidth="154.0" layoutX="72.0" layoutY="222.0" pickOnBounds="true" preserveRatio="true">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffc857" height="228.0" layoutX="6.0" layoutY="215.0" stroke="BLACK" strokeType="INSIDE" width="175.0" />
+      <ImageView fitHeight="220.0" fitWidth="154.0" layoutX="18.0" layoutY="222.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Logo%20Planificador.jpg" />
          </image>
       </ImageView>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffc857" height="228.0" layoutX="303.0" layoutY="216.0" stroke="BLACK" strokeType="INSIDE" width="175.0" />
-      <ImageView fitHeight="210.0" fitWidth="154.0" layoutX="314.0" layoutY="224.0" pickOnBounds="true">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffc857" height="228.0" layoutX="184.0" layoutY="215.0" stroke="BLACK" strokeType="INSIDE" width="175.0" />
+      <ImageView fitHeight="210.0" fitWidth="154.0" layoutX="195.0" layoutY="222.0" pickOnBounds="true">
          <image>
             <Image url="@Logo%20Cartero.jpg" />
          </image>
       </ImageView>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffc857" height="11.0" layoutX="8.0" layoutY="522.0" stroke="BLACK" strokeType="INSIDE" width="885.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffc857" height="228.0" layoutX="536.0" layoutY="216.0" stroke="BLACK" strokeType="INSIDE" width="338.0" />
-      <ImageView fitHeight="210.0" fitWidth="319.0" layoutX="546.0" layoutY="224.0" pickOnBounds="true">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffc857" height="228.0" layoutX="717.0" layoutY="215.0" stroke="BLACK" strokeType="INSIDE" width="175.0" />
+      <ImageView fitHeight="210.0" fitWidth="154.0" layoutX="727.0" layoutY="221.0" pickOnBounds="true">
          <image>
             <Image url="@Logo%20Reporte.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffc857" height="228.0" layoutX="540.0" layoutY="215.0" stroke="BLACK" strokeType="INSIDE" width="175.0" />
+      <ImageView fitHeight="210.0" fitWidth="154.0" layoutX="550.0" layoutY="222.0" pickOnBounds="true">
+         <image>
+            <Image url="@Logo%20Cliente.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="botonInterfazClientes" layoutX="550.0" layoutY="440.0" mnemonicParsing="false" onAction="#PasarAInterfazCliente" prefHeight="61.0" prefWidth="154.0" style="-fx-background-color: #CBEEF3; -fx-border-color: #596869; -fx-border-radius: 10 10 10 10; -fx-background-radius: 15 15 15 15; -fx-border-width: 2;" text="Clientes" textAlignment="CENTER">
+         <font>
+            <Font name="Futura Medium" size="20.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffc857" height="228.0" layoutX="363.0" layoutY="215.0" stroke="BLACK" strokeType="INSIDE" width="175.0" />
+      <Button fx:id="botonInterfazRecepcion" layoutX="373.0" layoutY="440.0" mnemonicParsing="false" onAction="#PasarAInterfazRecepcion" prefHeight="61.0" prefWidth="154.0" style="-fx-background-color: #CBEEF3; -fx-border-color: #596869; -fx-border-radius: 10 10 10 10; -fx-background-radius: 15 15 15 15; -fx-border-width: 2;" text="Recepción" textAlignment="CENTER">
+         <font>
+            <Font name="Futura Medium" size="20.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="210.0" fitWidth="154.0" layoutX="374.0" layoutY="222.0" pickOnBounds="true">
+         <image>
+            <Image url="@Logo%20Cartero.jpg" />
          </image>
       </ImageView>
    </children>
