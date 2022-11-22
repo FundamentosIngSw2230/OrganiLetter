@@ -66,5 +66,5 @@ public class ControladorInterfazRecepcion
     }
 
     // Registrar carta
-
+    
 }
