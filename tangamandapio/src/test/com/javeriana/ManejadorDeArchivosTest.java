@@ -41,7 +41,7 @@ public class ManejadorDeArchivosTest {
     @Test
     public void testJsonReaderCarta() {
         // ElManejadorDeArchivos.readJsonCarta();
-        ElManejadorDeArchivos.changeJsonAtributeCarta(0, "yesE");
+        // ElManejadorDeArchivos.changeJsonAtributeCarta(0, "yesE");
 
     }
 
