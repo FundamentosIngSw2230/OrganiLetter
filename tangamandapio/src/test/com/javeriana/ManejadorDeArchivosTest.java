@@ -40,6 +40,7 @@ public class ManejadorDeArchivosTest {
 
     @Test
     public void testJsonAtributeCarta() {
+        System.out.println("Test 3-1");
         String estadoOriginal = ElManejadorDeArchivos.readJsonCarta().get(0).getEstadoDeCarta();
         ElManejadorDeArchivos.changeJsonAtributeCarta(0, "TEST");
         assertEquals("TEST", ElManejadorDeArchivos.readJsonCarta().get(0).getEstadoDeCarta());
@@ -48,6 +49,7 @@ public class ManejadorDeArchivosTest {
 
     @Test
     public void testJsonAtributeCartero() {
+        System.out.println("Test 4-1");
         String estadoOriginal = ElManejadorDeArchivos.readJsonCartero().get(0).getEstado();
         ElManejadorDeArchivos.changeJsonAtributeCartero(0, "TEST");
         assertEquals("TEST", ElManejadorDeArchivos.readJsonCartero().get(0).getEstado());
@@ -57,11 +59,13 @@ public class ManejadorDeArchivosTest {
 
     @Test
     public void testJsonReaderCarta() {
+        System.out.println("Test 1-1");
         assertEquals(Carta.class, ElManejadorDeArchivos.readJsonCarta().get(0).getClass());
     }
 
     @Test
     public void testJsonReaderCartero() {
+        System.out.println("Test 2-1");
         assertEquals(Cartero.class, ElManejadorDeArchivos.readJsonCartero().get(0).getClass());
     }
 }
