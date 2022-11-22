@@ -72,11 +72,15 @@ public class ControladorInterfazRecepcion
         // Si la carta es de envio express o no
         boolean esExpress;
 
-        System.out.println("Holaa");
+        // Se coloca como si inicialmente pasara la carta, pero si no pasa entonces se actualiza el estado del texto.
+        textoNotificacionesRecepcion.setText("La carta se ha generado exitosamente :D");
+
+
         // Obtener ID carta
         try
         {
             int idCarta = Integer.parseInt(registrarCartaID.getText());
+            // EXTRAER AQUI EL ID
         }
         catch (NumberFormatException e) {
             textoNotificacionesRecepcion.setText("El ID es incorrecto");
@@ -87,6 +91,7 @@ public class ControladorInterfazRecepcion
         try
         {
             String fechaDeDeposito = registrarCartaFechaDeDeposito.getText();
+            // EXTRAER AQUI LA FECHA DE DEPOSITO
         }
         catch (Exception e) {
             textoNotificacionesRecepcion.setText("La fecha de deposito es incorrecta");
@@ -96,6 +101,7 @@ public class ControladorInterfazRecepcion
         try
         {
             String fechaDeEntrega = registrarCartaFechaDeEntrega.getText();
+            // EXTRAER AQUI LA FECHA DE ENTREGA
         }
         catch (Exception e) {
             textoNotificacionesRecepcion.setText("La fecha de entrega es incorrecta");
@@ -105,6 +111,7 @@ public class ControladorInterfazRecepcion
         try
         {
             int calleRecogida = Integer.parseInt(registrarCartaCalleRecogida.getText());
+            // EXTRAER AQUI LA CALLE - DIRECCION DE RECOGIDA
         }
         catch (NumberFormatException e) {
             textoNotificacionesRecepcion.setText("La calle de recogida es incorrecta");
@@ -115,6 +122,7 @@ public class ControladorInterfazRecepcion
         try
         {
             int carreraRecogida = Integer.parseInt(registrarCartaCarreraRecogida.getText());
+            /// EXTRAER AQUI LA CARRERA - DIRECCION DE RECOGIDA
         }
         catch (NumberFormatException e) {
             textoNotificacionesRecepcion.setText("La carrera de recogida es incorrecta");
@@ -125,6 +133,7 @@ public class ControladorInterfazRecepcion
         try
         {
             int calleEntrega = Integer.parseInt(registrarCartaCalleEntrega.getText());
+            // EXTRAER AQUI LA CALLE - DIRECCION DE ENTREGA
         }
         catch (NumberFormatException e) {
             textoNotificacionesRecepcion.setText("La calle de entrega es incorrecta");
@@ -135,6 +144,7 @@ public class ControladorInterfazRecepcion
         try
         {
             int carreraEntrega = Integer.parseInt(registrarCartaCarreraEntrega.getText());
+            // EXTRAER AQUI LA CARRERA - DIRECCION DE ENTREGA
         }
         catch (NumberFormatException e) {
             textoNotificacionesRecepcion.setText("La calle de entrega es incorrecta");
@@ -162,13 +172,13 @@ public class ControladorInterfazRecepcion
                 break;
             }
 
-            case ("En Ruta de Recogida"):
+            case ("En ruta de recogida"):
             {
                 estadoFinal = "EnRutaRecogida";
                 break;
             }
 
-            case ("En Ruta de Entrega"):
+            case ("En ruta de entrega"):
             {
                 estadoFinal = "EnRutaEntrega";
                 break;
