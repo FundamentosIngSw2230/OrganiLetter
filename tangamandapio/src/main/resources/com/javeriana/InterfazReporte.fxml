@@ -41,5 +41,87 @@
             <Font name="Futura Medium" size="13.0" />
          </font>
       </Button>
+      <Pane layoutX="35.0" layoutY="169.0" prefHeight="301.0" prefWidth="831.0" style="-fx-background-color: #CDE6F5; -fx-border-color: #596869 #596869; -fx-border-radius: 10 10 10 10; -fx-background-radius: 15 15 15 15; -fx-border-width: 2;">
+         <children>
+            <Pane layoutX="429.0" layoutY="46.0" prefHeight="182.0" prefWidth="386.0" style="-fx-background-color: #CBEEF3; -fx-border-color: BLACK; -fx-border-radius: 10 10 10 10; -fx-background-radius: 15 15 15 15; -fx-border-width: 2;">
+               <children>
+                  <Text fill="#596869" layoutX="29.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Carteros:">
+                     <font>
+                        <Font name="Futura Medium" size="21.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#596869" layoutX="9.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Carteros activos:">
+                     <font>
+                        <Font name="Futura Medium" size="21.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Text fill="#364243" layoutX="325.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registrar una carta">
+               <font>
+                  <Font name="Futura Medium" size="21.0" />
+               </font>
+            </Text>
+            <Pane layoutX="19.0" layoutY="46.0" prefHeight="243.0" prefWidth="386.0" style="-fx-background-color: #CBEEF3; -fx-border-color: BLACK; -fx-border-radius: 10 10 10 10; -fx-background-radius: 15 15 15 15; -fx-border-width: 2;">
+               <children>
+                  <Text fx:id="numeroDeCarterosActivos" layoutX="589.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="45.9609375">
+                     <font>
+                        <Font name="Futura Medium" size="21.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#596869" layoutX="29.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cartas:">
+                     <font>
+                        <Font name="Futura Medium" size="21.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#596869" layoutX="9.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cartas entregadas:">
+                     <font>
+                        <Font name="Futura Medium" size="21.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#596869" layoutX="9.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cartas en oficina:">
+                     <font>
+                        <Font name="Futura Medium" size="21.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#596869" layoutX="9.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cartas en ruta recogida:">
+                     <font>
+                        <Font name="Futura Medium" size="21.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#596869" layoutX="9.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cartas en ruta entrega:">
+                     <font>
+                        <Font name="Futura Medium" size="21.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="numeroDeCartasEntregadas" layoutX="199.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="45.9609375">
+                     <font>
+                        <Font name="Futura Medium" size="21.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="numeroDeCartasEnOficina" layoutX="184.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="45.9609375">
+                     <font>
+                        <Font name="Futura Medium" size="21.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="numeroDeCartasEnRutaRecogida" layoutX="248.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="45.9609375">
+                     <font>
+                        <Font name="Futura Medium" size="21.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="numeroDeCartasEnRutaDeEntrega" layoutX="238.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="45.9609375">
+                     <font>
+                        <Font name="Futura Medium" size="21.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Button layoutX="429.0" layoutY="242.0" mnemonicParsing="false" onAction="#actualizarReporte" prefHeight="47.0" prefWidth="386.0" style="-fx-background-radius: 50;" text="Actualizar Reporte" textFill="#364243">
+               <font>
+                  <Font name="Futura Medium" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
    </children>
 </AnchorPane>
