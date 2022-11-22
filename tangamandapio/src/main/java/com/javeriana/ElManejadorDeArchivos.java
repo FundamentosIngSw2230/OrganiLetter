@@ -29,7 +29,8 @@ public class ElManejadorDeArchivos {
         ArrayList<Carta> lCartas = new ArrayList<Carta>();
         try {
             ObjectMapper mapper = new ObjectMapper();
-            InputStream is = new FileInputStream(new File("tangamandapio\\BDcartas.json"));
+            //InputStream is = new FileInputStream(new File("tangamandapio\\BDcartas.json"));
+            InputStream is = new FileInputStream(new File("BDcartas.json"));
             TypeReference<ArrayList<Carta>> typeReference = new TypeReference<ArrayList<Carta>>() {
             };
             lCartas = mapper.readValue(is, typeReference);
@@ -57,7 +58,8 @@ public class ElManejadorDeArchivos {
 
     public static synchronized void updateJsonFileCarta(Carta carta) throws IOException {
         ObjectMapper objectMapper = new ObjectMapper();
-        Path path = Paths.get("tangamandapio\\BDcartas.json");
+        //Path path = Paths.get("tangamandapio\\BDcartas.json");
+        Path path = Paths.get("BDcartas.json");
         final String currentJsonArrayAsString = Files.readString(path);
 
         try (FileWriter fileWriter = new FileWriter(path.toFile(), false)) {
