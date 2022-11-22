@@ -66,5 +66,14 @@ public class ControladorInterfazRecepcion
     }
 
     // Registrar carta
-    
+    void RegistrarCartaRecepcion(ActionEvent event)
+    {
+        System.out.println("Holaa");
+    }
+
+    // Buscar carta
+    void BuscarCartaRecepcion(ActionEvent event)
+    {
+        System.out.println("Holaa buscar");
+    }
 }
