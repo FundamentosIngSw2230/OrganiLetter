@@ -21,7 +21,11 @@ import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class ElManejadorDeArchivos {
-    public ArrayList<Carta> readJsonCarta() {
+
+    public static ElManejadorDeArchivos ElManejadorDeArchivos_Instance = null;
+
+    public static ArrayList<Carta> readJsonCarta() {
+
         ArrayList<Carta> lCartas = new ArrayList<Carta>();
         try {
             ObjectMapper mapper = new ObjectMapper();
@@ -67,7 +71,7 @@ public class ElManejadorDeArchivos {
         }
     }
 
-    public ArrayList<Cartero> readJsonCartero() {
+    public static ArrayList<Cartero> readJsonCartero() {
         ArrayList<Cartero> lCarteros = new ArrayList<Cartero>();
         try {
             ObjectMapper mapper = new ObjectMapper();
@@ -167,6 +171,15 @@ public class ElManejadorDeArchivos {
 
             e.printStackTrace();
         }
+
+    }
+
+    public static ElManejadorDeArchivos getInstance() {
+        if (ElManejadorDeArchivos_Instance == null) {
+            ElManejadorDeArchivos_Instance = new ElManejadorDeArchivos();
+
+        }
+        return ElManejadorDeArchivos_Instance;
 
     }
 

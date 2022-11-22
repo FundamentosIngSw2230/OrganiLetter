@@ -26,4 +26,9 @@ public class ManejadorDeArchivosTest {
     public void tearDown() {
     }
 
+    @Test
+    public void testCambioDeEstadoCartero() {
+
+    }
+
 }
