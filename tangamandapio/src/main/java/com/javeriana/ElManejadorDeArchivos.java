@@ -29,17 +29,22 @@ public class ElManejadorDeArchivos {
         ArrayList<Carta> lCartas = new ArrayList<Carta>();
         try {
             ObjectMapper mapper = new ObjectMapper();
-            //InputStream is = new FileInputStream(new File("tangamandapio\\BDcartas.json"));
-            InputStream is = new FileInputStream(new File("BDcartas.json"));
+            // InputStream is = new FileInputStream(new
+            // File("tangamandapio\\BDcartas.json"));
+            InputStream is = new FileInputStream(new File("tangamandapio\\BDcartas.json"));
             TypeReference<ArrayList<Carta>> typeReference = new TypeReference<ArrayList<Carta>>() {
             };
             lCartas = mapper.readValue(is, typeReference);
-            for (Carta c : lCartas) {
-                System.out
-                        .println(c.getCalleEntrega() + '\t' + c.getCarreraEntrega() + '\t' + c.getEstadoDeCarta() + '\t'
-                                + c.getFechaDeDeposito() + '\t' + c.getFechaDeEntrega() + '\t' + c.getEsExpress()
-                                + '\t' + c.getIdCarta());
-            }
+            /*
+             * for (Carta c : lCartas) {
+             * System.out
+             * .println(c.getCalleEntrega() + '\t' + c.getCarreraEntrega() + '\t' +
+             * c.getEstadoDeCarta() + '\t'
+             * + c.getFechaDeDeposito() + '\t' + c.getFechaDeEntrega() + '\t' +
+             * c.getEsExpress()
+             * + '\t' + c.getIdCarta());
+             * }
+             */
             is.close();
 
         } catch (FileNotFoundException e) {
@@ -58,8 +63,8 @@ public class ElManejadorDeArchivos {
 
     public static synchronized void updateJsonFileCarta(Carta carta) throws IOException {
         ObjectMapper objectMapper = new ObjectMapper();
-        //Path path = Paths.get("tangamandapio\\BDcartas.json");
-        Path path = Paths.get("BDcartas.json");
+        // Path path = Paths.get("tangamandapio\\BDcartas.json");
+        Path path = Paths.get("tangamandapio\\BDcartas.json");
         final String currentJsonArrayAsString = Files.readString(path);
 
         try (FileWriter fileWriter = new FileWriter(path.toFile(), false)) {
@@ -81,11 +86,14 @@ public class ElManejadorDeArchivos {
             TypeReference<ArrayList<Cartero>> typeReference = new TypeReference<ArrayList<Cartero>>() {
             };
             lCarteros = mapper.readValue(is, typeReference);
-            for (Cartero c : lCarteros) {
-                System.out.println(
-                        c.getIdCartero() + '\t' + c.getEstado() + '\t' + c.getListadoDeCartasDeCartero().toString()
-                                + '\t' + c.getListadoDeCartasDeCartero().toString());
-            }
+            /*
+             * for (Cartero c : lCarteros) {
+             * System.out.println(
+             * c.getIdCartero() + '\t' + c.getEstado() + '\t' +
+             * c.getListadoDeCartasDeCartero().toString()
+             * + '\t' + c.getListadoDeCartasDeCartero().toString());
+             * }
+             */
 
             is.close();
 

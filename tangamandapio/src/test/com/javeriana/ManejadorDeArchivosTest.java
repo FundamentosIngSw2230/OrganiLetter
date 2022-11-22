@@ -1,15 +1,21 @@
 package com.javeriana;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertThat;
+
 import java.util.ArrayList;
 
 import org.junit.After;
 import org.junit.Before;
 import org.junit.jupiter.api.Test;
+import org.junit.runner.RunWith;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 import com.javeriana.Carta;
 import com.javeriana.ElManejadorDeArchivos;
+import org.junit.runners.Parameterized;
 
 public class ManejadorDeArchivosTest {
     public ManejadorDeArchivosTest() {
@@ -17,6 +23,7 @@ public class ManejadorDeArchivosTest {
 
     @BeforeClass
     public static void setUpClass() {
+
     }
 
     @AfterClass
@@ -32,14 +39,9 @@ public class ManejadorDeArchivosTest {
     }
 
     @Test
-    public void testCambioDeEstadoCartero() {
-        System.out.println(ElManejadorDeArchivos.readJsonCarta().size());
-        ArrayList<Carta> lC = ElManejadorDeArchivos.readJsonCarta();
-        System.out.println(lC);
-        // ElManejadorDeArchivos.changeJsonAtributeCartero(0, "test");
-
-        // assertEquals("recibiendo",
-        // ElManejadorDeArchivos.readJsonCartero().get(0).getEstado());
+    public void testJsonReaderCarta() {
+        // ElManejadorDeArchivos.readJsonCarta();
+        ElManejadorDeArchivos.changeJsonAtributeCarta(0, "yesE");
 
     }
 
